@@ -40,7 +40,7 @@ const Education = () => {
                 </span>
               </div>
               <div className="py-1">
-                <span className="text-xl text-[#226d01] ">
+                <span className="text-lg font-bold   text-[#226d01] ">
                   2014-2019 | Completed
                 </span>
               </div>
@@ -66,7 +66,7 @@ const Education = () => {
                 </span>
               </div>
               <div className="py-1">
-                <span className="text-xl text-[#226d01] ">
+                <span className="text-lg font-bold  text-[#226d01] ">
                   2012-2014 | Completed
                 </span>
               </div>
@@ -92,7 +92,7 @@ const Education = () => {
                 </span>
               </div>
               <div className="py-1">
-                <span className="text-xl text-[#226d01] ">
+                <span className="text-lg font-bold  text-[#226d01] ">
                   2010-2012 | Completed
                 </span>
               </div>

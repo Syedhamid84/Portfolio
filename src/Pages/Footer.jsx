@@ -13,21 +13,21 @@ import {faMapMarkedAlt} from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <>
-    <div className="min-h-fit bg-[#05011f]">
+    <div className="min-h-fit bg-[#05011f] container px-20">
       <div className="flex gap-8 py-2">
         <div className="flex  gap-4 w-1/2">
-          <div className="flex items-center flex-col gap-2 ">
+          <div className="flex flex-1 items-left flex-col gap-2 m-6 ">
             <div className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</div>
-            <div className="text-[#FFFFFF]  text-base">
+            <h1 className="text-[#FFFFFF]  text-base">
               Thank you for visiting my personal portfolio website.
               Connect with me over socials.
-            </div>
-            <div className="text-[#FFFFFF] text-center text-base">
+            </h1>
+            <p className="text-[#FFFFFF] text-base">
               Keep Rising 🚀. Connect with me over live chat!
-            </div>
+            </p>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 mt-6">
             <div className="text-[#FFFFFF] text-2xl ">
            
               Quick links</div>
@@ -53,7 +53,7 @@ const Footer = () => {
               Experience</div>
           </div>
         </div>
-        <div className="flex justify-center w-1/2">
+        <div className="flex justify-center w-1/2 mt-6">
           <div className="flex flex-col gap-2 ">
             <div className="text-[#FFFFFF] text-2xl">Contact Info</div>
             <div className="flex gap-2 text-[#FFFFFF] text-base">
@@ -67,20 +67,25 @@ const Footer = () => {
               Lahore, Pakistan-540000</div>
 
             <div className="flex gap-2 mt-4">
-              <div className="h-12 w-12 flex items-center  justify-center rounded-full bg-[#e6e6e6]">
-                {<LinkedInIcon className="text-black" />}
+              <div className="h-12 w-12 flex items-center  justify-center rounded-full  bg-[#e6e6e6] hover:bg-[#05011f] 
+              border border-[#FFFFFF] ">
+                {<LinkedInIcon className="text-[#02094b] hover:text-[#ffae02]  " />}
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]">
-                <GitHubIcon className="text-black" />
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              border border-[#FFFFFF]">
+                <GitHubIcon className="text-[#02094b] hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]">
-                <TwitterIcon className="text-black" />
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              border border-[#FFFFFF]">
+                <TwitterIcon className="text-[#02094b] hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]">
-                <InstagramIcon className="text-black" />
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              border border-[#FFFFFF]">
+                <InstagramIcon className="text-[#02094b] hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]">
-                <LogoDevIcon className="text-black" />
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              border border-[#FFFFFF]">
+                <LogoDevIcon className="text-[#02094b] hover:text-[#ffae02] " />
               </div>
             </div>
           </div>
