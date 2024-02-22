@@ -1,12 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import SchoolImage  from "../images/school.jpg";
-import CollegeImage from "../images/college.jpg"; 
+import SchoolImage from "../images/school.jpg";
+import CollegeImage from "../images/college.jpg";
 const Education = () => {
   return (
     <>
-      <div className="min-h-screen w-full bg-[#e5ecfb] ">
+      <div
+        id="education-section"
+        className="min-h-screen w-full bg-[#e5ecfb] ">
         <div className="flex justify-center gap-2 items-center mt-2 pt-6 pb-2">
           <span>
             <FontAwesomeIcon icon={faGraduationCap} className="h-9 w-9" />
@@ -25,7 +27,7 @@ const Education = () => {
         <div className="flex justify-center mt-4">
           <div className="flex gap-2 h-36 w-8/12 bg-[#fcfcfc] mt-4">
             <div className="h-36 w-3/12 bg-yellow-500">
-                <img src={SchoolImage} alt="" className="h-36"/>
+              <img src={SchoolImage} alt="" className="h-36" />
 
             </div>
             <div className="flex flex-col justify-center m-3 w-full ">
@@ -51,8 +53,8 @@ const Education = () => {
         <div className="flex justify-center mt-2">
           <div className="flex gap-2 h-36 w-8/12 bg-[#fcfcfc] mt-4">
             <div className="h-36 w-3/12 bg-yellow-500">
-            <img src={CollegeImage} alt="" className="h-36"/>
-                
+              <img src={CollegeImage} alt="" className="h-36" />
+
             </div>
             <div className="flex flex-col justify-center m-3 w-full ">
               <div className="py-1">
@@ -62,7 +64,7 @@ const Education = () => {
               </div>
               <div className="py-1">
                 <span className="text-base text-[#070707]">
-                  Govt Islamia College Civil lines 
+                  Govt Islamia College Civil lines
                 </span>
               </div>
               <div className="py-1">
@@ -77,8 +79,8 @@ const Education = () => {
         <div className="flex justify-center mt-2">
           <div className="flex gap-2 h-36 w-8/12 bg-[#fcfcfc] mt-4">
             <div className="h-36 w-3/12 bg-yellow-500">
-            <img src={SchoolImage} alt="" className="h-36"/>
-                
+              <img src={SchoolImage} alt="" className="h-36" />
+
             </div>
             <div className="flex flex-col justify-center m-3 w-full ">
               <div className="py-1">
