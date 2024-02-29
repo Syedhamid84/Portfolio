@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeWriter } from './TypeWriterComponent';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -23,7 +24,11 @@ const Home = () => {
               </h2>
             </div>
             <div>
-              <h1 className="text-2xl">I'm into Frontend Web Developement</h1>
+              {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
+              <TypeWriter text="  Frontend Web Developement|" />
+              {/* <TypeWriter text="  Backend Web Developement|" /> */}
+
+
             </div>
             <div className="">
               <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1">

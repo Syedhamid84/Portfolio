@@ -1,10 +1,10 @@
-import React from "react";
-import Home from "./Pages/Home";
+// import React from "react";
+// import Home from "./Pages/Home";
 export const TopbarData = [
     {
         name: "Home",
         link: "/",
-        element: <Home />,
+        // element: <Home />,
     },
     {
         name: "About",
