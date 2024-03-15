@@ -13,7 +13,7 @@ import FormImage from "../images/contact1.png";
 const Contact = () => {
   return (
     <>
-      <div className="min-h-screen w-full bg-[#e5ecfb]">
+      <div id="contact" className="min-h-screen w-full bg-[#e5ecfb]">
         <div className="flex items-center justify-center gap-2 pt-8">
           <span>
             {" "}

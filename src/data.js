@@ -1,34 +1,45 @@
-// import React from "react";
-// import Home from "./Pages/Home";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
+
 export const TopbarData = [
     {
         name: "Home",
-        link: "/",
-        // element: <Home />,
+        link: "home",
+        icon: faChevronCircleRight,
     },
     {
         name: "About",
-        link: "/about",
-        // element: <Home/>,
+        link: "about",
+        icon: faChevronCircleRight,
+
     },
     {
         name: "Skills",
-        link: "/skills",
+        link: "skills",
+        icon: faChevronCircleRight,
+
     },
     {
         name: "Education",
-        link: "/education",
+        link: "education",
+        icon: faChevronCircleRight,
+
     },
     {
         name: "Work",
-        link: "/work",
+        link: "work",
+        icon: faChevronCircleRight,
+
     },
     {
         name: "Experience",
-        link: "/experience",
+        link: "experience",
+        icon: faChevronCircleRight,
+
     },
     {
         name: "Contact",
-        link: "/contact",
+        link: "contact",
+        icon: faChevronCircleRight,
+
     },
 ];

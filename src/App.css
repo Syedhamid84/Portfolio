@@ -36,7 +36,8 @@
     transform: rotate(360deg);
   }
 } */
-/* .body{
-  
-  scrollbar-color: red;
-} */
+.body {
+  /* scrollbar-width: 4px;
+  scrollbar-color: red; */
+ 
+}

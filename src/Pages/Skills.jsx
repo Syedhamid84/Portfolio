@@ -35,7 +35,9 @@ import wordpress from '../images/wordpress.png';
 const Skills = () => {
    return (
       <>
-         <section className="h-[990px] w-full bg-[#5304b5]">
+         <section
+            id="skills"
+            className="h-[990px] w-full bg-[#5304b5]">
             <div className="flex justify-center items-center gap-2 p-2">
                <div className=" flex justify-center items-center gap-2 my-2">
                   <span className="items-center ">

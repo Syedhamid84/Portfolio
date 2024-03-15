@@ -5,7 +5,7 @@ export const TypeWriter = ({ text, speed }) => {
     const displayText = useTypewriter(text, speed);
     return (
 
-        <p className="text-2xl">I'm into <span className='text-red-500'>{displayText}</span></p>
+        <p className="text-2xl">I'm into <span className='text-red-500 font-bold'>{displayText}</span></p>
 
     )
 

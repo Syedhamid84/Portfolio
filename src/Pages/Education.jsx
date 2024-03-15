@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <>
       <div
-        id="education-section"
+        id="education"
         className="min-h-screen w-full bg-[#e5ecfb] ">
         <div className="flex justify-center gap-2 items-center mt-2 pt-6 pb-2">
           <span>

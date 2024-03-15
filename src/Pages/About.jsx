@@ -6,8 +6,8 @@ import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
   return (
     <>
-      <section className="min-h-screen w-full">
-        <div className="flex justify-center gap-2 mt-12">
+      <section id="about" className="bg-white w-full py-12">
+        <div className="flex justify-center  gap-2 ">
           <span>  <FontAwesomeIcon icon={faUserAlt} className="h-9 w-9 " /> </span>
           <h1>
 
@@ -15,23 +15,17 @@ const About = () => {
             <span className="text-4xl font-bold text-[#7403a7]"> Me</span>
           </h1>
         </div>
-        <div className="flex gap-2 mt-12">
-          <div className="flex justify-center items-center bg-red-500 h-1/2 w-1/2 py-4">
-            <div className="bg-green-300 h-auto w-56 rounded-md">
-              <img
-                className="rounded-md"
-                src={ProfileImage}
-                alt="" />
-            </div>
-          </div>
-          <div className="flex items-start gap-2 bg-green-500 h-1/2 w-1/2 flex-col py-4 px-2 ">
+        <div className="flex flex-col md:flex-row justify-evenly bg-yellow-200  mt-12 p-4">
+          <img
+            className="rounded-md w-80"
+            src={ProfileImage}
+            alt="" />
+          <div className="flex items-start gap-2  flex-col py-4 px-2 bg-green-100 max-w-[480px] ">
             <div>
               <h1><b>I'm Hamid</b></h1>
               <b>Full Stack Developer</b>
             </div>
-            {/* <div>
-              <h1>Full Stack Developer</h1>
-            </div> */}
+
             <div>
               <p>
                 I am a Full-Stack developer based in Lahore, Pakistan. I am an
@@ -51,10 +45,10 @@ const About = () => {
               <p>Lahore, Pakistan - 540000</p>
             </div>
             <div className="mt-8">
-              <button className="rounded-md bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1">
+              <button className="flex justify-center items-center rounded-md bg-[#2506ad] text-[#FFFFFF] text-lg w-32 py-2 gap-1">
                 Resume
                 <div>
-                  <FontAwesomeIcon icon={faChevronRight} className="h-3 w-3 " />
+                  <FontAwesomeIcon icon={faChevronRight} className=" w-2 " />
 
                 </div>
               </button>

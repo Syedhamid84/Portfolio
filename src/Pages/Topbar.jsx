@@ -1,28 +1,7 @@
 import React from "react";
-// import { useState } from "react";
-// import Home from "../Pages/Home";
-
-// import About from "../Pages/About";
-// import Skills from "../Pages/Skills";
-// import Education from "../Pages/Education";
-// import Work from "../Pages/Work";
-// import Experience from "../Pages/Experience";
-// import Contact from "../Pages/Contact";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import { TopbarData } from "../data";
-import { Link } from "react-router-dom";
-
-// const navigation = [{
-//   { name: "Home", href: "", current: "", },
-// { name: "", href: "", current: "", },
-// { name: "", href: "", current: "", },
-// { name: "", href: "", current: "", },
-// { name: "", href: "", current: "", },
-
-// }]
-
 const Topbar = () => {
-
   return (
     <navbar className="bg-red-300">
       <div>
@@ -31,22 +10,21 @@ const Topbar = () => {
             {TopbarData.map((item, index) => {
               return (
                 <div
-                  key={item.name}
-                // href={item.href} 
+                  key={index}
                 >
-                  {item.name}
+                  <Link
+                    activeClass="active"
+                    to={item.link}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="hover:border-b-2 border-[#2506ad] font-bold hover:text-[#2506ad] pb-1.5"
+                  >
+                    {item.name}
+
+                  </Link>
                 </div>
-                // <Link
-                //   key={item.name}
-                //   href={item.href}
-                //   className={(
-                //     item.current ? " text-purple" : "hover:text-purple",
-                //     "px-3 py-4 text-15px font-medium space-links"
-                //   )}
-                //   aria-current={item.href ? "page" : undefined}
-                // >
-                //   {item.name}
-                // </Link>
               );
             })}
           </nav>
