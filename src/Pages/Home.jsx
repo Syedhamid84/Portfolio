@@ -16,7 +16,8 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="py-16 w-full  flex gap-12 bg-black items-center  ">
+        className="py-16 w-full  flex gap-12  items-center  ">
+      
         <div className="h-full w-1/2 bg-orange-100 flex justify-center   ">
           <div className=" flex  items-start flex-col gap-2">
             <div className=" ">
@@ -67,6 +68,8 @@ const Home = () => {
               <img src={hero} alt="" className=" h-72 w-72 rounded-full" />
             </div>
           </div>
+          <div id="particles-js"></div>
+
         </div>
       </section>
     </>

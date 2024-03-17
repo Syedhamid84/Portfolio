@@ -11,6 +11,7 @@ import Skills from './Pages/Skills';
 import Education from './Pages/Education';
 import Footer from './Pages/Footer';
 import Experience from './Pages/Experience';
+import Design from "./Components/design";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
     <div
 
       className="">
+              {/* <div className="w-full h-screen absolute top-0 left-0">
+        <Design />
+      </div> */}
       <Topbar />
       <Home />
       <About />

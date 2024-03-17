@@ -10,7 +10,7 @@ const Work = () => {
     <>
       <section
         id="work"
-        className=" bg-[#01042d] min-h-screen w-full mt-12 ">
+        className=" bg-[#01042d] w-full  ">
         <div className="flex justify-center items-center gap-2 p-2">
 
           <div className=" flex justify-center items-center gap-2 mt-4 mb-4">

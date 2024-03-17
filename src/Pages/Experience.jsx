@@ -6,7 +6,7 @@ const Experience = () => {
     <>
       <div
         id="experience"
-        className="min-h-screen bg-[#f7f7f7] w-full mt-4">
+        className=" bg-[#f7f7f7] w-full mt-4">
         <div className="flex justify-center items-center bg-red-400 gap-2">
           <span className="items-center">
             <FontAwesomeIcon

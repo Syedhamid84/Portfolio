@@ -16,9 +16,9 @@ import { TopbarData } from "../data";
 const Footer = () => {
   return (
     <div className=" bg-[#05011f] container px-20 relative">
-      <div className="flex gap-8 py-2 bg-yellow-300">
-        <div className="flex  gap-4 w-1/2 bg-red-400">
-          <div className="flex flex-1 items-left flex-col gap-2 m-6 bg-green-400">
+      <div className="flex gap-8 py-2 ">
+        <div className="flex  gap-4 w-1/2 ">
+          <div className="flex flex-1 items-left flex-col gap-2 m-6">
             <div className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</div>
             <h1 className="text-[#FFFFFF]  text-base">
               Thank you for visiting my personal portfolio website.
@@ -134,25 +134,25 @@ const Footer = () => {
               Lahore, Pakistan-540000</div>
 
             <div className="flex gap-2 mt-4">
-              <div className="h-12 w-12 flex items-center  justify-center rounded-full  bg-[#e6e6e6] hover:bg-[#05011f] 
+              <div className="h-12 w-12 flex items-center  justify-center rounded-full  bg-[#e6e6e6] group hover:bg-[#05011f] 
               border border-[#FFFFFF] ">
-                {<LinkedInIcon className="text-[#02094b] hover:text-[#ffae02]  " />}
+                {<LinkedInIcon className="text-[#02094b] group-hover:text-[#ffae02]  " />}
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6] group hover:bg-[#05011f] 
               border border-[#FFFFFF]">
-                <GitHubIcon className="text-[#02094b] hover:text-[#ffae02] " />
+                <GitHubIcon className="text-[#02094b] group-hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6] group hover:bg-[#05011f] 
               border border-[#FFFFFF]">
-                <TwitterIcon className="text-[#02094b] hover:text-[#ffae02] " />
+                <TwitterIcon className="text-[#02094b] group-hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6] group hover:bg-[#05011f] 
               border border-[#FFFFFF]">
-                <InstagramIcon className="text-[#02094b] hover:text-[#ffae02] " />
+                <InstagramIcon className="text-[#02094b] group-hover:text-[#ffae02] " />
               </div>
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6]  hover:bg-[#05011f] 
+              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#e6e6e6] group hover:bg-[#05011f] 
               border border-[#FFFFFF]">
-                <LogoDevIcon className="text-[#02094b] hover:text-[#ffae02] " />
+                <LogoDevIcon className="text-[#02094b] group-hover:text-[#ffae02] " />
               </div>
             </div>
           </div>
@@ -166,11 +166,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="h-14 w-14 flex justify-center border border-white items-center absolute bottom-4 right-4 rounded-full bg-purple animate-bounce	">
+      <div className="h-14 w-14 flex justify-center border border-white items-center absolute bottom-4 right-4 rounded-full bg-purple  group hover:border-[#ffae02] animate-bounce	">
         <a href="https://wa.link/yp6v57">
           <FontAwesomeIcon
             icon={faCommentDots}
-            className="text-lg text-[#FFFFFF] h-6 w-6 "
+            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-6 w-6 "
           />
 
 

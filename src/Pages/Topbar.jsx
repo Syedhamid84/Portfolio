@@ -3,8 +3,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { TopbarData } from "../data";
 const Topbar = () => {
   return (
-    <navbar className="bg-red-300">
-      <div>
         <div className="bg-yellow-200 h-16  flex items-center justify-end px-24">
           <nav className="flex gap-10  list-none ">
             {TopbarData.map((item, index) => {
@@ -29,8 +27,6 @@ const Topbar = () => {
             })}
           </nav>
         </div>
-      </div>
-    </navbar>
   );
 };
 
