@@ -12,15 +12,13 @@ import hero from "../images/hero.png";
 
 const Home = () => {
   return (
-    <section id="home" className="py-16 w-full  flex gap-12  items-center  ">
-      <div className="h-full w-1/2 bg-orange-100 flex justify-center   ">
-        <div className=" flex  items-start flex-col gap-2">
-          <div className=" ">
+    <section id="home" className="py-16 flex gap-12 justify-evenly items-center bg-red-400  ">
+      {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
+        <div className=" flex  items-center justify-center flex-col gap-2 bg-green-500">
             <h2 className="text-[50px] font-bold text-[#002057] ">
               Hi There, <br /> I'm Syed Hamid{" "}
               <span className="text-[#FF7B00] ">Ali</span>
             </h2>
-          </div>
           <div>
             {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
             <TypeWriter text="  Frontend Web Developement|" />
@@ -47,16 +45,16 @@ const Home = () => {
             })}
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
-      <div className="h-full w-1/2 bg-yellow-200 flex justify-center  ">
-        <div className="h-72 w-72  bg-green-50 ">
-          <div className="h-72 w-72 rounded-full bg-green-400 ">
+      {/* <div className=" bg-yellow-200 flex justify-center  "> */}
+        {/* <div className="h-72 w-72  bg-green-50 "> */}
+          {/* <div className="h-72 w-72 rounded-full bg-green-400 "> */}
             <img src={hero} alt="" className=" h-72 w-72 rounded-full" />
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
         <div id="particles-js"></div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
