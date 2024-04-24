@@ -70,15 +70,15 @@ const Footer = () => {
               );
             })}
             <div className="flex gap-2 mt-4">
-              {IconLinkData.map((Item, index) => {
+              {IconLinkData.map((item, index) => {
                 return (
-                  <Link
+                  <div
                     key={index}
                     className="h-12 w-12 flex items-center  justify-center rounded-full  bg-[#e6e6e6] group hover:bg-[#05011f] 
                   border border-[#FFFFFF] "
                   >
-                    <Item.icon className="text-[#02094b] group-hover:text-[#ffae02] " />
-                  </Link>
+                    <item.icon className="text-[#02094b] group-hover:text-[#ffae02] " />
+                  </div>
                 );
               })}
             </div>

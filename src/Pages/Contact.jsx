@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -6,15 +6,49 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
-
-// <i class="fa fa-phone" aria-hidden="true"></i>
-
 import FormImage from "../images/contact1.png";
+
+
 const Contact = () => {
+  const [formdata, setFormdata] = useState({
+    username: "",
+    useremail: "",
+    userphone: "",
+    usermessage: "",
+
+  })
+  const SubmitHandle = () => {
+  console.log("values", formdata);
+
+    console.log("pakistan");
+    setFormdata({
+    username: "",
+    useremail: "",
+    userphone: "",
+    usermessage: "", 
+    });
+  }
+  const IsValidEmail = (value) => {
+    const EmailRegix = /^[A-Z0-9. _%+-]+@[A-Z0-9. -]+\. [A-Z]{2,}$/i ;
+    return EmailRegix.test(value);
+  }
+  
+  const IsValidPhone = (value)  =>{
+    const phoneNumberRegix = /^(\+[1-9]{1}[0-9]{3,14})?([0-9]{9,14})$/;
+    return phoneNumberRegix.test(value);
+  }
+  
+  const IsFormdisabled = () => {
+    return(
+      !IsValidEmail(formdata.useremail)
+      || formdata.username === "" ||
+      formdata.usermessage === "" || !IsValidPhone(formdata.userphone) 
+   );
+  }
   return (
     <>
-      <div id="contact" className="min-h-screen w-full bg-[#e5ecfb]">
-        <div className="flex items-center justify-center gap-2 pt-8">
+      <div id="contact" className="w-full bg-[#e5ecfb] py-8">
+        <div className="flex items-center justify-center gap-2 pt-2">
           <span>
             {" "}
             <FontAwesomeIcon icon={faHeadset} className="h-9 w-9" />
@@ -26,17 +60,19 @@ const Contact = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="flex justify-center gap-10 h-[450px] w-5/6  bg-[#FFFFFF]  mt-12  px-4 py-6 rounded-2xl">
-            <div className="md:flex justify-center bg-red-100 h-full w-1/2 hidden">
-              <img src={FormImage} alt="" className="" />
-            </div>
-            <form className="flex flex-col gap-4 w-96 ">
+          <div className="flex justify-center gap-10 max-w-[996px]  bg-[#FFFFFF]  mt-12  px-4 py-6 rounded-2xl">
+              <img src={FormImage} alt="" className="hidden md:block" />
+            <div className="flex flex-col gap-4 w-96 ">
               <div className="relative ">
                 <input
-                  className="bg-[#e5ecfb] h-12 w-72 md:w-96 placeholder-black rounded-md border border-black pl-12"
+                  className="bg-[#e5ecfb] h-12 w-full md:w-96 placeholder-black rounded-md border border-black pl-12"
                   type="text"
                   placeholder="Name"
-                  id="name "
+                  id="name"
+                  name={formdata.username}
+                  value={formdata.username}
+                  onChange={(e)=> setFormdata({...formdata, username: e.target.value})}
+                  required
                 />
 
                 <span className="flex justify-center items-center absolute top-0  h-12 w-12">
@@ -49,10 +85,14 @@ const Contact = () => {
 
               <div className="relative">
                 <input
-                  className="bg-[#e5ecfb] h-12 w-72 md:w-96 placeholder-black rounded-md border border-black pl-12 "
+                  className="bg-[#e5ecfb] h-12 w-full md:w-96 placeholder-black rounded-md border border-black pl-12 "
                   type="email"
                   placeholder="Email"
                   id="email"
+                  name={formdata.useremail}
+                  value={formdata.useremail}
+                  onChange={(e)=> setFormdata({...formdata, useremail: e.target.value})}
+                  required
                 />
                 <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                   <FontAwesomeIcon
@@ -61,13 +101,16 @@ const Contact = () => {
                   />
                 </span>
               </div>
-
               <div className="relative">
                 <input
-                  className="bg-[#e5ecfb] h-12 w-72 md:w-96 placeholder-black rounded-md border border-black pl-12 "
-                  type="number"
+                  className="bg-[#e5ecfb] h-12 w-full md:w-96 placeholder-black rounded-md border border-black pl-12 "
+                  type="phone"
                   placeholder="Phone"
                   id="phone"
+                  name={formdata.userphone}
+                  value={formdata.userphone}
+                  onChange={(e)=> setFormdata({...formdata, userphone: e.target.value})}
+                  required
                 />
                 <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                   <FontAwesomeIcon
@@ -79,10 +122,14 @@ const Contact = () => {
 
               <div className="relative">
                 <textarea
-                  className="bg-[#e5ecfb] h-36 w-96 placeholder-black rounded-md pl-12 border border-black pt-2 "
+                  className="bg-[#e5ecfb] h-36 w-full md:w-96 placeholder-black rounded-md pl-12 border border-black pt-2 resize-none"
                   type="text"
                   placeholder="Message"
                   id="message"
+                  name={formdata.usermessage}
+                  value={formdata.usermessage}
+                  onChange={(e)=>setFormdata({...formdata, usermessage: e.target.value})}
+                  required
                 />
                 <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                   <FontAwesomeIcon
@@ -92,14 +139,17 @@ const Contact = () => {
                 </span>
               </div>
               <div className="flex justify-end">
-                <button className="flex justify-center items-center gap-2 rounded-md  bg-[#2506ad] text-lg text-[#FFFFFF] w-32 h-12 ">
+                <button className="flex justify-center items-center gap-2 rounded-md  bg-[#2506ad] text-lg text-[#FFFFFF] w-32 h-12 cursor-pointer shadow-outline"
+                disabled={IsFormdisabled()}
+                onClick={()=> SubmitHandle() }
+                >
                   Submit
                   <span>
                     <FontAwesomeIcon icon={faPaperPlane} />
                   </span>
                 </button>
               </div>
-            </form>
+            </div>
             {/* </div> */}
           </div>
         </div>

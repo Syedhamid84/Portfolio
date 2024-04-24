@@ -33,14 +33,14 @@ const Home = () => {
             </button>
           </div>
           <div className="flex gap-2 mt-4">
-            {IconLinkData.map((Item, index) => {
+            {IconLinkData.map((item, index) => {
               return (
-                <Link
+                <div
                   key={index}
                   className="h-12 w-12 flex items-center  justify-center rounded-full bg-black"
                 >
-                  <Item.icon className="text-[#05daff]" />
-                </Link>
+                  <item.icon className="text-[#05daff]" />
+                </div>
               );
             })}
           </div>
