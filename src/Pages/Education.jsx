@@ -27,7 +27,7 @@ const Education = () => {
           return (
             <div
               key={index}
-              className="flex gap-4 h-36 w-8/12 bg-[#fcfcfc]"
+              className="flex flex-col md:flex-row gap-4 h-36 w-8/12 bg-[#fcfcfc]"
             >
               <div className="h-36 w-3/12 bg-yellow-500">
                 <img src={item.img} alt={item.alt} className="h-36" />

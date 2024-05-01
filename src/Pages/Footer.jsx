@@ -14,10 +14,9 @@ import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
-    <div className=" bg-[#05011f] container px-20 relative">
-      <div className="flex gap-8 py-2 ">
-        <div className="flex  gap-4 w-1/2 ">
-          <div className="flex flex-1 items-left flex-col gap-2 m-6">
+    <div className="flex flex-col gap-8 bg-[#05011f] px-20 relative">
+      <div className="flex flex-col md:flex-row gap-8 pt-6">
+          <div className="flex flex-col gap-2 w-full">
             <h1 className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</h1>
             <p className="text-[#FFFFFF]  text-base">
               Thank you for visiting my personal portfolio website. Connect with
@@ -28,7 +27,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-2 mt-6">
+          <div className="flex flex-col gap-2 w-full">
             <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
             {QuickLinksData.map((Item, index) => {
               return (
@@ -51,8 +50,7 @@ const Footer = () => {
               );
             })}
           </div>
-        </div>
-        <div className="flex justify-center w-1/2 mt-6">
+        <div className="flex justify-center w-full ">
           <div className="flex flex-col gap-2 ">
             <h1 className="text-[#FFFFFF] text-2xl">Contact Info</h1>
             {ContactinfoData.map((Item, index) => {
@@ -85,8 +83,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[#05011f]  flex mt-4 justify-center ">
-        <div className="text-[#e6e6e6] bg-[#05011f] mt-4 mb-4">
+      <hr className="h-1 w-full"/>
+      
+      <div className=" bg-[#05011f]  flex justify-center mb-4">
+        <div className="text-[#e6e6e6] bg-[#05011f] ">
           Designed With{" "}
           <span>
             <FontAwesomeIcon icon={faHeart} className="text-[#ea0607]" />
@@ -94,14 +94,7 @@ const Footer = () => {
           By Syed Hamid Ali
         </div>
       </div>
-      <div className="h-14 w-14 flex justify-center border border-white items-center absolute bottom-4 right-4 rounded-full bg-purple  group hover:border-[#ffae02] animate-bounce	">
-        <a href="https://wa.link/yp6v57">
-          <FontAwesomeIcon
-            icon={faCommentDots}
-            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-6 w-6 "
-          />
-        </a>
-      </div>
+      
     </div>
   );
 };

@@ -12,49 +12,44 @@ import hero from "../images/hero.png";
 
 const Home = () => {
   return (
-    <section id="home" className="py-16 flex gap-12 justify-evenly items-center bg-red-400  ">
+    <section
+      id="home"
+      className="flex flex-col md:flex-row justify-evenly items-center mt-0 py-16 gap-12 "
+    >
       {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
-        <div className=" flex  items-center justify-center flex-col gap-2 bg-green-500">
-            <h2 className="text-[50px] font-bold text-[#002057] ">
-              Hi There, <br /> I'm Syed Hamid{" "}
-              <span className="text-[#FF7B00] ">Ali</span>
-            </h2>
-          <div>
-            {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
-            <TypeWriter text="  Frontend Web Developement|" />
-            {/* <TypeWriter text="  Backend Web Developement|" /> */}
-          </div>
-          <div className="">
-            <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1">
-              About Me
-              <div>
-                <FontAwesomeIcon icon={faCircleArrowDown} />
-              </div>
-            </button>
-          </div>
-          <div className="flex gap-2 mt-4">
-            {IconLinkData.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="h-12 w-12 flex items-center  justify-center rounded-full bg-black"
-                >
-                  <item.icon className="text-[#05daff]" />
-                </div>
-              );
-            })}
-          </div>
+      <div className=" flex  items-start justify-center flex-col gap-2">
+        <h2 className="text-[50px] font-bold text-[#002057] font-poppins ">
+          Hi There, <br /> I'm Syed Hamid{" "}
+          <span className="text-[#FF7B00] ">Ali</span>
+        </h2>
+        <div>
+          {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
+          <TypeWriter text="Frontend Web Developement|" />
+          {/* <TypeWriter text="  Backend Web Developement|" /> */}
         </div>
-      {/* </div> */}
+        <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1">
+          About Me
+          <span>
+            <FontAwesomeIcon icon={faCircleArrowDown} />
+          </span>
+        </button>
+        <div className="flex gap-2 mt-4">
+          {IconLinkData.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="h-12 w-12 flex items-center  justify-center rounded-full bg-black"
+              >
+                <item.icon className="text-[#05daff]" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
-      {/* <div className=" bg-yellow-200 flex justify-center  "> */}
-        {/* <div className="h-72 w-72  bg-green-50 "> */}
-          {/* <div className="h-72 w-72 rounded-full bg-green-400 "> */}
-            <img src={hero} alt="" className=" h-72 w-72 rounded-full" />
-          {/* </div> */}
-        {/* </div> */}
-        <div id="particles-js"></div>
-      {/* </div> */}
+      <img src={hero} alt="" className=" h-80 w-80 rounded-full" />
+
+      <div id="particles-js"></div>
     </section>
   );
 };
