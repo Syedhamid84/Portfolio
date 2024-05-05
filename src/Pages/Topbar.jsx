@@ -1,7 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import { TopbarData } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons"; 
+import MobileNavbar from "./Mobilenavbar";
+
+
 const Topbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const IconHandle = () => {
+    
+    setOpen(!open);
+    console.log("testing", open);
+  }
   return (
     <div className="flex-col"> 
     <div className="bg-white py-5 w-full flex items-center justify-end gap-6 px-16 lg:px-32 static z-40 ">
@@ -22,8 +35,17 @@ const Topbar = () => {
           </div>
         );
       })}
+
+      <div className="block md:hidden">
+      <FontAwesomeIcon icon={faBars}
+      className="h-5 w-6 text-[#002057]" 
+      onClick={()=>IconHandle()}/>
+      </div>
     </div>
       <hr />
+      {open &&  (
+        <MobileNavbar/>
+      )}
     </div>
   );
 };
