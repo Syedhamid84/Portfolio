@@ -4,8 +4,8 @@ import { TopbarData } from "../data";
 
 const MobileNavbar = () => {
   return (
-    <div className="flex justify-end max-h-[82vh] w-full absolute top-[70px] ">
-      <div className="flex flex-col w-[50%] gap-4  bg-white px-8 py-6">
+    <div className="flex justify-end max-h-[82vh] w-[50%] absolute top-[70px] right-0 border shadow-md">
+      <div className="flex flex-col w-full gap-4  bg-white px-8 py-6">
         {TopbarData.map((item , index) => {
           return (
             <div
