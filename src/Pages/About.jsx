@@ -27,7 +27,7 @@ const About = () => {
               <h1 className="text-2xl font-bold">{Item.name}</h1>
               <h1 className="text-sm font-semibold">{Item.designation} </h1>
 
-              <p className="text-base font-poppins">{Item.description}</p>
+              <p className="text-base ">{Item.description}</p>
               <span className="flex gap-1 text-base font-poppins">
                 <p className="text-[#1522ff]">Email :</p> <p>{Item.email} </p>
               </span>

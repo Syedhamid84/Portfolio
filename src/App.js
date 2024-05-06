@@ -6,17 +6,17 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Work from "./Pages/Work";
-import Skills from "./Pages/Skills";
-import Education from "./Pages/Education";
+// import Skills from "./Pages/Skills";
+// import Education from "./Pages/Education";
 import Footer from "./Pages/Footer";
-import MobileNavbar from "./Pages/Mobilenavbar";
-import Experience from "./Pages/Experience";
+// import MobileNavbar from "./Pages/Mobilenavbar";
+// import Experience from "./Pages/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
-      <div className=" ">
+      <div>
         <Topbar />
         <Home />
         <About />

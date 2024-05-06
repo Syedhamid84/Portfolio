@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { TypeWriter } from "./TypeWriterComponent";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
