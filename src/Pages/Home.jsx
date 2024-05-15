@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row justify-evenly items-center mt-0 py-16 gap-12 "
+      className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-0 py-8 md:py-16 gap-12 "
     >
       {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
       <div className=" flex  items-start justify-center flex-col gap-2">
-        <h2 className="text-[50px] font-bold text-[#002057] font-poppins ">
+        <h2 className="text-3xl md:text-5xl font-bold text-[#002057] font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
           <span className="text-[#FF7B00] ">Ali</span>
         </h2>
