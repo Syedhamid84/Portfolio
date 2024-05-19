@@ -4,7 +4,7 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { SkillsData } from "../data";
 const Skills = () => {
   return (
-    <section id="skills" className="max-h-screen w-full bg-[#5304b5]">
+    <section id="skills" className="w-full bg-[#5304b5]">
       <div className="flex justify-center items-center gap-2 p-2">
         <div className=" flex justify-center items-center gap-2 my-2">
           <span className="items-center ">
@@ -14,8 +14,10 @@ const Skills = () => {
             />
           </span>
           <h1 className="">
-            <span className="text-4xl font-bold text-[#FFFFFF]">Skills &</span>
-            <span className="text-4xl font-bold text-[#ffe603]">
+            <span className="text-3xl md:text-4xl font-bold text-[#FFFFFF]">
+              Skills &
+            </span>
+            <span className="text-3xl md:text-4xl font-bold text-[#ffe603]">
               {" "}
               Abilities
             </span>
@@ -23,8 +25,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center max-h-full bg-red-500 ">
-        <div className="flex justify-center pb-4 gap-3 bg-[#330572] flex-wrap rounded-lg mx-24 md:mx-48 pt-4 mb-4">
+      <div className="flex justify-center items-center ">
+        <div className="flex justify-center pb-4 gap-3 bg-[#330572] flex-wrap rounded-lg mx-5 md:mx-24 lg:mx-48 pt-4 mb-4">
           {SkillsData.map((item, index) => {
             return (
               <div

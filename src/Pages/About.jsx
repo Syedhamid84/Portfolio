@@ -3,6 +3,7 @@ import ProfileImage from "../images/profile2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+
 const About = () => {
   return (
     <section id="about" className="bg-[#efefef] w-full py-12">
@@ -12,8 +13,11 @@ const About = () => {
           <FontAwesomeIcon icon={faUserAlt} className="h-9 w-9 " />{" "}
         </span>
         <h1>
-          <span className="text-4xl font-bold">About</span>
-          <span className="text-4xl font-bold text-[#7403a7]"> Me</span>
+          <span className="text-3xl md:text-4xl font-bold">About</span>
+          <span className="text-3xl md:text-4xl font-bold text-[#7403a7]">
+            {" "}
+            Me
+          </span>
         </h1>
       </div>
       <div className="flex flex-col md:flex-row gap-8 items-center justify-evenly mt-12 p-4">

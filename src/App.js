@@ -6,10 +6,9 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Work from "./Pages/Work";
-// import Skills from "./Pages/Skills";
-// import Education from "./Pages/Education";
+import Skills from "./Pages/Skills";
+import Education from "./Pages/Education";
 import Footer from "./Pages/Footer";
-// import MobileNavbar from "./Pages/Mobilenavbar";
 // import Experience from "./Pages/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
@@ -20,13 +19,12 @@ function App() {
       <Topbar />
       <Home />
       <About />
-      {/* <Skills /> */}
-      {/* <Education /> */}
+      <Skills />
+      <Education />
       <Work />
       {/* <Experience /> */}
       <Contact />
       <Footer />
-      {/* <MobileNavbar/> */}
       <div className="h-14 w-14 flex justify-center border border-white items-center fixed bottom-4 right-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
         <a href="https://wa.link/yp6v57">
           <FontAwesomeIcon

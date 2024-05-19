@@ -6,42 +6,52 @@ import CollegeImage from "../images/college.jpg";
 const Education = () => {
   return (
     <div id="education" className="w-full bg-[#e5ecfb] py-8 ">
-      <div className="flex flex-col gap-2 items-center ">
+      <div className="flex flex-col gap-6 items-center">
         <div className="flex items-center gap-2">
           <span>
             <FontAwesomeIcon icon={faGraduationCap} className="h-9 w-9" />
           </span>
-          <h1>
-            <span className="text-4xl font-bold">My </span>
-            <span className="text-4xl font-bold text-[#7403a7]">Education</span>
+          <h1 className="">
+            <span className="text-3xl md:text-4xl font-bold">My </span>
+            <span className="text-3xl md:text-4xl font-bold text-[#7403a7]">
+              Education
+            </span>
           </h1>
         </div>
 
-        <p className="text-2xl text-[#000000]">
+        <p className="text-lg  text-[#000000] text-center px-2 ">
           Education Is Not The Learning Of Facts, But The Training Of The Mind
           To Think.
         </p>
       </div>
-      <div className="flex flex-col gap-4 items-center mt-4 ">
-        {EducationData.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row gap-4 h-36 w-8/12 bg-[#fcfcfc]"
-            >
-              <div className="h-36 w-3/12 bg-yellow-500">
-                <img src={item.img} alt={item.alt} className="h-36" />
+      <div className="flex justify-center items-center mt-4 ">
+        <div className="flex flex-col gap-4 mt-4 px-4 w-[850px] ">
+          {EducationData.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row gap-0 md:gap-4 w-full bg-[#fcfcfc] rounded-md"
+              >
+                <div className="w-full md:w-56">
+                  <img
+                    src={item.img}
+                    alt={item.alt}
+                    className="w-full h-full object-cover object-center rounded-s-md"
+                  />
+                </div>
+                <div className="flex flex-col justify-center gap-2 w-full mt-2 p-4">
+                  <span className="text-2xl text-[#012a70]">{item.degree}</span>
+                  <span className="text-base text-[#070707]">
+                    {item.school}
+                  </span>
+                  <span className="text-lg font-bold   text-[#226d01] ">
+                    {item.date}
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-col justify-center gap-1  w-full ">
-                <span className="text-2xl text-[#012a70]">{item.degree}</span>
-                <span className="text-base text-[#070707]">{item.school}</span>
-                <span className="text-lg font-bold   text-[#226d01] ">
-                  {item.date}
-                </span>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
