@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileImage from "../images/profile2.jpg";
+import ProfileImage from "../images/hamid.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,11 @@ const About = () => {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row gap-8 items-center justify-evenly mt-12 p-4">
-        <img className="rounded-md w-80" src={ProfileImage} alt="" />
+        <img
+          className="rounded-md w-80 border bg-cover"
+          src={ProfileImage}
+          alt=""
+        />
         {AboutData.map((Item, index) => {
           return (
             <div
