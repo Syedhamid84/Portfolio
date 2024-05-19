@@ -8,10 +8,6 @@ import { Spin as Hamburger } from "hamburger-react";
 const Topbar = () => {
   const [open, setOpen] = useState(false);
 
-  const IconHandle = () => {
-    setOpen(!open);
-    console.log("testing", open);
-  };
   return (
     <div className="flex-col">
       <div className="bg-white py-5 w-full flex items-center justify-end gap-6 px-5 md:px-16 lg:px-32 static z-40 ">
