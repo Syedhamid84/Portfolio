@@ -11,46 +11,45 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
-// import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-8 bg-[#05011f] px-20 relative">
+    <div className="flex flex-col gap-8 bg-[#05011f] px-4 md:px-20 relative">
       <div className="flex flex-col md:flex-row gap-8 pt-6">
-          <div className="flex flex-col gap-2 w-full">
-            <h1 className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</h1>
-            <p className="text-[#FFFFFF]  text-base">
-              Thank you for visiting my personal portfolio website. Connect with
-              me over socials.
-            </p>
-            <p className="text-[#FFFFFF] text-base">
-              Keep Rising 🚀. Connect with me over live chat!
-            </p>
-          </div>
+        <div className="flex flex-col gap-2 w-full ">
+          <h1 className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</h1>
+          <p className="text-[#FFFFFF]  text-base">
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+          </p>
+          <p className="text-[#FFFFFF] text-base">
+            Keep Rising 🚀. Connect with me over live chat!
+          </p>
+        </div>
 
-          <div className="flex flex-col gap-2 w-full">
-            <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
-            {QuickLinksData.map((Item, index) => {
-              return (
-                <Link
-                  key={index}
-                  activeClass="active"
-                  to={Item.link}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
-                >
-                  <span>
-                    {" "}
-                    <FontAwesomeIcon icon={Item.icon} />
-                  </span>
-                  {Item.text}{" "}
-                </Link>
-              );
-            })}
-          </div>
-        <div className="flex justify-center w-full ">
+        <div className="flex flex-col gap-2 w-full">
+          <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
+          {QuickLinksData.map((Item, index) => {
+            return (
+              <Link
+                key={index}
+                activeClass="active"
+                to={Item.link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
+              >
+                <span>
+                  {" "}
+                  <FontAwesomeIcon icon={Item.icon} />
+                </span>
+                {Item.text}{" "}
+              </Link>
+            );
+          })}
+        </div>
+        <div className="flex items-start w-full">
           <div className="flex flex-col gap-2 ">
             <h1 className="text-[#FFFFFF] text-2xl">Contact Info</h1>
             {ContactinfoData.map((Item, index) => {
@@ -83,8 +82,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="h-1 w-full"/>
-      
+      <hr className="h-1 w-full" />
+
       <div className=" bg-[#05011f]  flex justify-center mb-4">
         <div className="text-[#e6e6e6] bg-[#05011f] ">
           Designed With{" "}
@@ -94,7 +93,6 @@ const Footer = () => {
           By Syed Hamid Ali
         </div>
       </div>
-      
     </div>
   );
 };
