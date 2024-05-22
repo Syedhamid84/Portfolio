@@ -20,7 +20,7 @@ const About = () => {
           </span>
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row gap-8 items-center justify-evenly mt-12 p-4">
+      <div className="flex flex-col md:flex-row gap-8 items-center justify-evenly ">
         <img
           className="rounded-md w-80 border bg-cover"
           src={ProfileImage}
