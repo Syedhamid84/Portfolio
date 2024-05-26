@@ -1,9 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import ViewButton from "../Components/Button";
+
 const Experience = () => {
   return (
-    <div id="experience" className="bg-[#f7f7f7] w-full pt-4 pb-44">
+    <div id="experience" className="bg-[#f7f7f7] w-full pt-4 ">
       <div className="flex justify-center items-center bg-red-400 gap-2">
         <span className="items-center">
           <FontAwesomeIcon
@@ -162,10 +164,10 @@ const Experience = () => {
             </div>
           </div>
         </div> */}
-      <div className="w-12 h-[500px] bg-transparent relative mx-auto">
-        {/* 1st experience */}
+      <div className="w-12 h-[750px] bg-transparent relative mx-auto">
         <div className="w-4 h-[650px] absolute bg-black mx-auto top-0 left-0 right-0"></div>
-        <div className=" h-6 w-6 bg-yellow-300 absolute top-10 left-0 right-0 mx-auto">
+        {/* 1st experience */}
+        {/* <div className=" h-6 w-6 bg-yellow-300 absolute top-10 left-0 right-0 mx-auto">
           <div className=" relative">
             <div className=" w-[300px] absolute bg-red-300 -top-2 left-16 mx-auto rounded-md">
               <div className="relative w-full">
@@ -178,9 +180,73 @@ const Experience = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        {/* {ExperiencedData.map((item, index)=>{
+          return(
+                <div key={index} className={´h-6 w-6 bg-yellow-300 absolute top-${item.iconPosition} left-0 right-0 mx-auto´}>
+                  
+                  
+          <div className=" relative">
+            <div className=" w-[300px] absolute bg-red-300 -top-2 left-16 mx-auto rounded-md">
+              <div className="relative w-full">
+                <div className="absolute bg-red-300 h-6 w-6 -left-2 top-4 rotate-45 "></div>
+                <div className="flex flex-col  px-8 py-2">
+                  <h1 className="font-bold">Self Employed</h1>
+                  <h1 className="font-bold">Full Stack Developer</h1>
+                  <span>Oct 2021- present</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+          );
+        })}; */}
+
+        {ExperiencedData.map((item, index) => (
+          <div
+            key={index}
+            className={` flex justify-center items-center h-8 w-8 border-4  border-yellow-300 bg-white rounded-full absolute mx-auto top-${item.iconPosition.top} right-${item.iconPosition.right} left-${item.iconPosition.left}`}
+          >
+            <span className="">
+              <FontAwesomeIcon
+                icon={faBriefcase}
+                className="h-4 w-4 text-[#202020]"
+              />{" "}
+            </span>
+            <div className="relative">
+              <div
+                className={`w-[300px] absolute bg-red-300 mx-auto rounded-md top-${
+                  item.SideBoxDiv.top
+                } ${
+                  item.SideBoxDiv.right !== undefined
+                    ? `right-${item.SideBoxDiv.right} left-${item.SideBoxDiv.left} left-${item.SideBoxDiv.left}`
+                    : `left-${item.SideBoxDiv.left}`
+                }`}
+              >
+                <div className="relative w-full">
+                  <div
+                    className={`absolute bg-red-300 h-6 w-6 rotate-45 top-${
+                      item.RotateDiv.top
+                    } ${
+                      item.RotateDiv.right !== undefined
+                        ? `right-${item.RotateDiv.left}`
+                        : `left-${item.RotateDiv.right}`
+                    }`}
+                  ></div>
+                  <div className="flex flex-col px-8 py-2">
+                    <h1 className="font-bold">{item.title}</h1>
+                    <h1 className="font-bold">{item.heading}</h1>
+                    <span>{item.date}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+
         {/* 2nd Experience */}
-        <div className=" h-6 w-6 bg-yellow-300 absolute top-36 left-0 right-0 mx-auto">
+        {/* <div className=" h-6 w-6 bg-yellow-300 absolute top-36 left-0 right-0 mx-auto">
           <div className=" relative">
             <div className=" w-[300px] absolute bg-red-300 -top-2 right-16 mx-auto rounded-md">
               <div className="relative w-full  ">
@@ -193,7 +259,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* 3rd experirence */}
         <div className=" h-6 w-6 bg-yellow-300 absolute top-64 left-0 right-0 mx-auto">
@@ -259,22 +325,79 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      {/* <div className="relative w-10 h-[500px] pt-10 bg-yellow-500 mx-auto ">
-          <div className="absolute w-2 h-[500px] bg-black mx-auto top-0 left-0 right-0"></div>
 
-          <div className="absolute w-5 h-5 bg-orange-400 top left-0 right-0 mx-auto">
-            <div className="relative">
-              <div className="absolute bg-blue-300 h-10 w-40 -top-2 left-10 rounded-md">
-                <div className="relative h-full w-full">
-                  <div className="absolute top-2.5 -left-1 w-4 h-4 bg-blue-300 rotate-45"></div>
-                </div>
-              </div>
-            </div>
+      {/* <div className="flex justify-center mt-4 ">
+        <button className="border-2 rounded-md text-[#FFFFFF] border-white bg-[#01042d] px-8 py-3 flex gap-1 mb-4">
+          View All
+          <div>
+            <FontAwesomeIcon icon={faArrowRight} />
           </div>
+        </button>
+      </div> */}
 
-          <div className="absolute w-5 h-5 bg-orange-400 top-40 left-0 right-0 mx-auto"></div>
-        </div> */}
+      <ViewButton buttonValue={"View All"} />
     </div>
   );
 };
 export default Experience;
+{
+  /*     <div className=" h-6 w-6 bg-yellow-300 absolute top-36 left-0 right-0 mx-auto">
+          <div className=" relative">
+            <div className=" w-[300px] absolute bg-red-300 -top-2 right-16 mx-auto rounded-md">
+              <div className="relative w-full  ">
+                <div className="absolute bg-red-300 h-6 w-6 -right-2 top-4 rotate-45 "></div>
+                <div className="flex flex-col  px-8 py-2">
+                  <h1 className="font-bold">Self Employed</h1>
+                  <h1 className="font-bold">Full Stack Developer</h1>
+                  <span>Oct 2021- present</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>*/
+}
+
+export const ExperiencedData = [
+  {
+    icon: "faBriefcase",
+    iconPosition: {
+      top: 10,
+      right: 0,
+      left: 0,
+    },
+    SideBoxDiv: {
+      top: -2, //minus 2
+      left: 16,
+      right: 0,
+    },
+    RotateDiv: {
+      top: 4,
+      left: 2, //minus 2
+    },
+
+    title: "Self Employed",
+    heading: "Full Stack Developer",
+    date: "Oct 2021- present",
+  },
+
+  {
+    icon: "faBriefcase",
+    iconPosition: {
+      top: 36,
+      right: 0,
+      left: 0,
+    },
+    SideBoxDiv: {
+      top: -2, //minus 2
+      right: 16,
+    },
+    RotateDiv: {
+      top: 4,
+      right: -2,
+    },
+
+    title: "Self Employed",
+    heading: "Full Stack Developer",
+    date: "Oct 2021- present",
+  },
+];

@@ -9,6 +9,7 @@ import LogoDevIcon from "@mui/icons-material/LogoDev";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import hero from "../images/hero.png";
+// import Design from "../Components/design";
 
 const Home = () => {
   const [hover, setHover] = useState(false);

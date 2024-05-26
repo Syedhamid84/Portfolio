@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faEye, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import FlipcartProject from "../images/flipkartphp.png";
 import ProjectImage from "../images/reactprojects.png";
+import ViewButton from "../Components/Button";
 
 const Work = () => {
   return (
@@ -65,16 +65,7 @@ const Work = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-center mt-4 ">
-        <div>
-          <button className="border-2 rounded-md text-[#FFFFFF] border-white bg-[#01042d] px-8 py-3 flex gap-1 mb-4">
-            View All
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </button>
-        </div>
-      </div>
+      <ViewButton buttonValue={"View All"} />
     </section>
   );
 };

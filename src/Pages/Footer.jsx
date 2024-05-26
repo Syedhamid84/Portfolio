@@ -11,6 +11,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
+<FontAwesomeIcon icon="fa-brands fa-whatsapp" />;
 const Footer = () => {
   return (
     <div className="flex flex-col gap-8 bg-[#05011f] px-4 md:px-20 relative">

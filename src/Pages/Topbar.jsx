@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { TopbarData } from "../data";
 import MobileNavbar from "./Mobilenavbar";
 import { Spin as Hamburger } from "hamburger-react";
+import NameLogo from "../Components/Logo/logo";
 
 const Topbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,10 @@ const Topbar = () => {
   };
   return (
     <div className="flex-col">
-      <div className="bg-white py-5 w-full flex items-center justify-end gap-6 px-5 md:px-16 lg:px-32 static z-40 ">
+      <div className="bg-white py-5 w-full flex items-center justify-end gap-6 px-5 md:px-16 static z-40 ">
+        <div className="flex justify-start bg bg-red-400 items-start">
+          <NameLogo />
+        </div>
         {TopbarData.map((item, index) => {
           return (
             <div key={index} className="hidden md:flex">

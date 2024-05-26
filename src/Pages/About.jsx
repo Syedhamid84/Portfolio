@@ -3,6 +3,7 @@ import ProfileImage from "../images/hamid.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import resume from "../images/Resume.pdf";
 
 const About = () => {
   return (
@@ -42,10 +43,12 @@ const About = () => {
               <span className="flex gap-1 text-base font-poppins">
                 <p className="text-[#1522ff]">Place :</p> <p>{Item.place} </p>
               </span>
-              <button className="flex justify-center items-center font-sans font-medium rounded-md bg-[#2506ad] text-[#FFFFFF] text-lg w-32 py-2 gap-2 mt-8">
-                {Item.button}
-                <FontAwesomeIcon icon={Item.icon} className=" w-2 mt-1" />
-              </button>
+              <a href={resume} download="Resume">
+                <button className="flex justify-center items-center font-sans font-medium rounded-md bg-[#2506ad] text-[#FFFFFF] text-lg w-32 py-2 gap-2 mt-8  ">
+                  {Item.button}
+                  <FontAwesomeIcon icon={Item.icon} className=" w-2 mt-1" />
+                </button>
+              </a>
             </div>
           );
         })}
