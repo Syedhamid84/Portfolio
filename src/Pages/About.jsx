@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfileImage from "../images/hamid.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import resume from "../images/Resume.pdf";
+
+// import { motion, AnimatePresence } from "framer-motion";
 
 const About = () => {
   return (
@@ -27,6 +29,12 @@ const About = () => {
           src={ProfileImage}
           alt=""
         />
+        {/* <motion.div
+          animate={{ scale: 2, borderRadius: "50%", background: "yellow" }}
+          whileHover={{ background: "blue" }}
+        >
+          <div className="h-32 w-32  rounded-md">oakistan</div>
+        </motion.div> */}
         {AboutData.map((Item, index) => {
           return (
             <div

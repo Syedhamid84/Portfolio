@@ -16,7 +16,8 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-0 py-8 md:py-16 gap-12 "
+      //using mt-20 to expand particles js
+      className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-20 py-8 md:py-16 gap-12 "
     >
       {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
       <div className=" flex  items-start justify-center flex-col gap-2">

@@ -9,24 +9,27 @@ import Work from "./Pages/Work";
 import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Footer from "./Pages/Footer";
-import Experience from "./Pages/Experience";
+// import Experience from "./Pages/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 // import { faWhatsapp } from "@fortawesome/free-solid-svg-icons";
+import ParticlesComponent from "./Components/config/particles_config";
 
 function App() {
   return (
     <div>
       <Topbar />
       <Home />
+      <ParticlesComponent id="particles" />
+
       <About />
       <Skills />
       <Education />
       <Work />
-      <Experience />
+      {/* <Experience /> */}
       <Contact />
       <Footer />
-      <div className="h-14 w-14 flex justify-center border border-white items-center fixed bottom-4 right-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
+      <div className="h-14 w-14 flex justify-center border border-white items-center fixed bottom-4 left-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
         <a href="https://wa.link/yp6v57">
           <FontAwesomeIcon
             icon={faCommentDots}
