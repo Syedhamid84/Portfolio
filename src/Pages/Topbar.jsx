@@ -27,7 +27,7 @@ const Topbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="hover:border-b-2 border-[#2506ad] font-semibold hover:text-[#2506ad] pb-1.5 cursor-pointer font-poppins shadow-2xl"
+                className="hover:border-b-2 border-[#011aff] font-semibold hover:text-[#011aff] pb-1.5 cursor-pointer font-poppins shadow-2xl"
               >
                 {item.name}
               </Link>

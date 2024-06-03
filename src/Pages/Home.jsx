@@ -20,7 +20,7 @@ const Home = () => {
       className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-20 py-8 md:py-16 gap-12 "
     >
       {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
-      <div className=" flex  items-start justify-center flex-col gap-2">
+      <div className=" flex  items-start justify-center flex-col gap-4">
         <h2 className="text-3xl md:text-5xl font-bold text-[#002057] font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
           <span className="text-[#FF7B00] ">Ali</span>
@@ -40,7 +40,7 @@ const Home = () => {
           duration={500}
           className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
         >
-          <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1">
+          <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1 shadow-xl hover:shadow-2xl transition-shadow duration-300 ">
             About Me
             <span>
               <FontAwesomeIcon icon={faCircleArrowDown} />
