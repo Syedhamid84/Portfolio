@@ -15,3 +15,16 @@
   /* position: absolute; */
 }
 
+.space-links{
+ transition: 0.3s;
+}
+.space-links:hover {
+   letter-spacing: 2px;
+}
+.button-gap{
+  transition: 0.3s;
+}
+.button-gap:hover {
+  gap: 12px;
+}
+

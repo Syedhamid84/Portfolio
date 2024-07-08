@@ -18,6 +18,14 @@
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #7303a7;
-
-
 }
+
+/* .custom-position {
+    left: 64px;
+}
+
+@media (max-width: 768px) {
+    .custom-position {
+        right: 64px;
+    }
+} */

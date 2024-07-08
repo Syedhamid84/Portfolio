@@ -9,6 +9,7 @@ import LogoDevIcon from "@mui/icons-material/LogoDev";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import hero from "../images/hero.png";
+// import ParticlesComponent from "../Components/config/particles_config";
 // import Design from "../Components/design";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
       //using mt-20 to expand particles js
       className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-20 py-8 md:py-16 gap-12 "
     >
-      {/* <div className=" w-1/2 bg-orange-100 flex justify-center   "> */}
+      {/* <ParticlesComponent id="particles" /> */}
       <div className=" flex  items-start justify-center flex-col gap-4">
         <h2 className="text-3xl md:text-5xl font-bold text-[#002057] font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
@@ -69,7 +70,7 @@ const Home = () => {
 
       <img src={hero} alt="" className=" h-80 w-80 rounded-full" />
 
-      <div id="particles-js"></div>
+      {/* <div id="particles-js" className="bg-red-500"></div> */}
     </section>
   );
 };

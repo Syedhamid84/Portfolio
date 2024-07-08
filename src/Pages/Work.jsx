@@ -37,6 +37,11 @@ const Work = () => {
                   alt={Item.alt}
                   className="object-cover object-center w-full h-full rounded-md"
                 />
+                <div className="absolute bottom-0 w-full">
+                  <div className="bg-yellow-300  rounded-b-md px-2 py-4 text-xl font-bold ">
+                    {Item.projectname}
+                  </div>
+                </div>
 
                 <div className="flex flex-col gap-3 absolute opacity-0 hover:opacity-100 bg-white bottom-0 right-0">
                   <h3 className="text-xl bg-yellow-300 px-2 py-4 font-bold">
@@ -65,7 +70,9 @@ const Work = () => {
           })}
         </div>
       </div>
-      <ViewButton buttonValue={"View All"} />
+      <div className="">
+        <ViewButton buttonValue={"View All"} work={true} />
+      </div>
     </section>
   );
 };

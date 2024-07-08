@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <Link
+        {/* <Link
           activeClass="active"
           to="test1"
           spy={true}
@@ -39,7 +39,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faAngleUp} className="text-black" />
             </span>
           </div>
-        </Link>
+        </Link> */}
 
         <div className="flex flex-col gap-2 w-full">
           <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
@@ -53,9 +53,9 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
+                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer  hover:text-[#ffae02] "
               >
-                <span>
+                <span className="">
                   {" "}
                   <FontAwesomeIcon icon={Item.icon} />
                 </span>

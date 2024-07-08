@@ -42,7 +42,7 @@ const Education = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={animationVariants}
-            className="flex flex-col gap-4 mt-4 px-4 w-[850px]  "
+            className="flex flex-col gap-4 mt-4 px-4 max-w-[850px]"
           >
             {EducationData.map((item, index) => {
               return (

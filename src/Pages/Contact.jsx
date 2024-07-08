@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="flex flex-col gap-4 w-96">
             <div className="relative ">
               <input
-                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black pl-12"
+                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black focus:outline-[#7e19af] pl-12"
                 type="text"
                 placeholder="Name"
                 id="name"
@@ -78,14 +78,14 @@ const Contact = () => {
               <span className="flex justify-center items-center absolute top-0  h-12 w-12">
                 <FontAwesomeIcon
                   icon={faUser}
-                  className="text-lg text-[#333333]"
+                  className="text-lg text-[#333333] focus:text-[#7e19af]"
                 />{" "}
               </span>
             </div>
 
             <div className="relative">
               <input
-                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black pl-12"
+                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black focus:outline-[#7e19af] pl-12"
                 type="text"
                 placeholder="Email"
                 id="email"
@@ -107,7 +107,7 @@ const Contact = () => {
 
             <div className="relative">
               <input
-                className="bg-[#e5ecfb] h-12 w-full md:w-96 placeholder-black rounded-md border border-black pl-12 "
+                className="bg-[#e5ecfb] h-12 w-full md:w-96 placeholder-black rounded-md border border-black pl-12 focus:outline-[#7e19af]"
                 type="phone"
                 placeholder="Phone"
                 id="phone"
@@ -128,7 +128,7 @@ const Contact = () => {
 
             <div className="relative">
               <textarea
-                className="bg-[#e5ecfb] h-36 w-full md:w-96 placeholder-black rounded-md pl-12 border border-black pt-2 resize-none"
+                className="bg-[#e5ecfb] h-36 w-full md:w-96 placeholder-black rounded-md pl-12 border border-black focus:outline-[#7e19af] pt-2 resize-none"
                 type="text"
                 placeholder="Message"
                 id="message"
@@ -148,7 +148,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className="flex justify-center items-center gap-2 rounded-md  bg-[#2506ad] text-lg text-[#FFFFFF] w-32 h-12 cursor-pointer shadow-outline"
+                className="flex justify-center items-center gap-2 rounded-md  bg-[#2506ad] text-lg text-[#FFFFFF] w-32 h-12 cursor-pointer shadow-outline button-gap"
                 disabled={IsFormdisabled()}
                 onClick={() => SubmitHandle()}
               >
