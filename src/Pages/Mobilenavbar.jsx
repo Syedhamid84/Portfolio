@@ -16,7 +16,7 @@ const MobileNavbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="hover:border-b-2 text-white border-[#2506ad] font-semibold hover:text-[#2506ad] pb-1.5 cursor-pointer font-poppins shadow-2xl"
+                className="hover:border-b-2 text-white hover:border-b-[#02094b] font-semibold hover:text-[#2506ad] pb-1.5 cursor-pointer font-poppins shadow-2xl space-links"
               >
                 {item.name}
               </Link>

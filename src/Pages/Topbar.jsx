@@ -4,13 +4,19 @@ import { Link } from "react-scroll";
 import { TopbarData } from "../data";
 import MobileNavbar from "./Mobilenavbar";
 import { Spin as Hamburger } from "hamburger-react";
+import NameLogo from "../Components/Logo/logo";
 
 const Topbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex-col">
-      <div className="bg-white py-5 w-full flex items-center justify-end gap-6 px-5 md:px-16 lg:px-32 static z-40 ">
+    // fixed and static issues
+    <div name="test1" className="flex-col ">
+      <div className="bg-white py-3 w-full flex items-center justify-end gap-6 px-5 static md:px-16  z-40 ">
+        <div className=" flex-1 ml-5 md:ml-10  ">
+          <NameLogo />
+        </div>
+
         {TopbarData.map((item, index) => {
           return (
             <div key={index} className="hidden md:flex">
@@ -21,7 +27,7 @@ const Topbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="hover:border-b-2 border-[#2506ad] font-semibold hover:text-[#2506ad] pb-1.5 cursor-pointer font-poppins shadow-2xl"
+                className="hover:border-b-2 border-[#011aff] font-semibold hover:text-[#011aff] pb-1.5 cursor-pointer font-poppins shadow-2xl space-links"
               >
                 {item.name}
               </Link>

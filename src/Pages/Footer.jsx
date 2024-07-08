@@ -11,6 +11,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div className="flex flex-col gap-8 bg-[#05011f] px-4 md:px-20 relative">
@@ -26,6 +27,20 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* <Link
+          activeClass="active"
+          to="test1"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <div className="flex justify-center items-center h-9 w-9 bg-yellow-400 rounded-full absolute bottom-4 right-4">
+            <span>
+              <FontAwesomeIcon icon={faAngleUp} className="text-black" />
+            </span>
+          </div>
+        </Link> */}
+
         <div className="flex flex-col gap-2 w-full">
           <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
           {QuickLinksData.map((Item, index) => {
@@ -38,9 +53,9 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
+                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer  hover:text-[#ffae02] "
               >
-                <span>
+                <span className="">
                   {" "}
                   <FontAwesomeIcon icon={Item.icon} />
                 </span>

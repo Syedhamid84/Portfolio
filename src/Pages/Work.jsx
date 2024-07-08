@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faEye, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import FlipcartProject from "../images/flipkartphp.png";
 import ProjectImage from "../images/reactprojects.png";
+import ViewButton from "../Components/Button";
 
 const Work = () => {
   return (
@@ -37,6 +37,11 @@ const Work = () => {
                   alt={Item.alt}
                   className="object-cover object-center w-full h-full rounded-md"
                 />
+                <div className="absolute bottom-0 w-full">
+                  <div className="bg-yellow-300  rounded-b-md px-2 py-4 text-xl font-bold ">
+                    {Item.projectname}
+                  </div>
+                </div>
 
                 <div className="flex flex-col gap-3 absolute opacity-0 hover:opacity-100 bg-white bottom-0 right-0">
                   <h3 className="text-xl bg-yellow-300 px-2 py-4 font-bold">
@@ -65,15 +70,8 @@ const Work = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-center mt-4 ">
-        <div>
-          <button className="border-2 rounded-md text-[#FFFFFF] border-white bg-[#01042d] px-8 py-3 flex gap-1 mb-4">
-            View All
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </button>
-        </div>
+      <div className="">
+        <ViewButton buttonValue={"View All"} work={true} />
       </div>
     </section>
   );
