@@ -1,6 +1,5 @@
 import "./App.css";
 
-// import backgroundimage from '../src/Assets/images/background1.jpg';
 import Topbar from "./Pages/Topbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
