@@ -28,7 +28,18 @@ const Home = () => {
         </h2>
         <div>
           {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
-          <TypeWriter text="Frontend Web Developement|" />
+          {/* <TypeWriter text="Frontend Web Developement| " /> */}
+
+          <TypeWriter
+            texts={[
+              "Frontend Web Development|",
+              "Backend Web Development|",
+              "Full Stack Development|",
+              "UI/UX Design|",
+            ]}
+            speed={80}
+          />
+
           {/* <TypeWriter text="  Backend Web Developement|" /> */}
         </div>
 

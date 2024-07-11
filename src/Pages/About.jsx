@@ -101,7 +101,11 @@ const About = () => {
                 >
                   <span className="flex gap-1 text-base font-poppins">
                     <p className="text-[#1522ff]">Email :</p>{" "}
-                    <p>{item.email}</p>
+                    <a href="https://mail.google.com/mail/u/0/#compose">
+                      {" "}
+                      {item.email}
+                    </a>
+                    {/* <p>{item.email}</p> */}
                   </span>
                 </motion.div>
 
@@ -119,7 +123,7 @@ const About = () => {
                 <a href={resume} download="Resume">
                   <button
                     className="flex justify-center items-center font-sans font-medium rounded-md bg-[#2506ad] 
-                  text-[#FFFFFF] text-lg w-32 py-2 gap-2 mt-8 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                  text-[#FFFFFF] text-lg w-32 py-2 gap-2 mt-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 button-gap"
                   >
                     {item.button}
                     <FontAwesomeIcon icon={item.icon} className="w-2 mt-1" />

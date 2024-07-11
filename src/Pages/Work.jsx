@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faEye, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import FlipcartProject from "../images/flipkartphp.png";
@@ -6,6 +6,11 @@ import ProjectImage from "../images/reactprojects.png";
 import ViewButton from "../Components/Button";
 
 const Work = () => {
+  const [allproject, setAllproject] = useState(false);
+  const handleViewProject = () => {
+    setAllproject(!allproject);
+    console.log("allproject", allproject);
+  };
   return (
     <section id="work" className=" bg-[#01042d] w-full  ">
       <div className=" flex justify-center items-center gap-2 py-12">
@@ -68,11 +73,58 @@ const Work = () => {
               </div>
             );
           })}
+
+          {allproject &&
+            ProjectsData.map((Item, index) => {
+              return (
+                <div key={index} className="w-full md:w-80 h-80 relative">
+                  <img
+                    src={Item.img}
+                    alt={Item.alt}
+                    className="object-cover object-center w-full h-full rounded-md"
+                  />
+                  <div className="absolute bottom-0 w-full">
+                    <div className="bg-yellow-300  rounded-b-md px-2 py-4 text-xl font-bold ">
+                      {Item.projectname}
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-3 absolute opacity-0 hover:opacity-100 bg-white bottom-0 right-0">
+                    <h3 className="text-xl bg-yellow-300 px-2 py-4 font-bold">
+                      {Item.projectname}{" "}
+                    </h3>
+                    <h1 className="px-5 text-base">
+                      {Item.projectdescription}{" "}
+                    </h1>
+                    <div className="flex justify-between px-5 py-3">
+                      <button className="flex gap-1 justify-center items-center py-3 px-5 rounded-md text-white bg-black text-base">
+                        <FontAwesomeIcon
+                          icon={faEye}
+                          className="h-4 w-4 text-center mt-1"
+                        />
+                        View
+                      </button>
+                      <button className="flex gap-1 justify-center items-center py-3 px-5 rounded-md text-white bg-black text-base">
+                        Code
+                        <FontAwesomeIcon
+                          icon={faCode}
+                          className="h-4 w-4 text-center mt-1"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
-      <div className="">
-        <ViewButton buttonValue={"View All"} work={true} />
-      </div>
+      {!allproject ? (
+        <div className="" onClick={() => handleViewProject()}>
+          <ViewButton buttonValue={"View All"} work={true} />
+        </div>
+      ) : (
+        <div></div>
+      )}
     </section>
   );
 };
