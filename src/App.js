@@ -10,13 +10,12 @@ import Education from "./Pages/Education";
 import Footer from "./Pages/Footer";
 import Experience from "./Pages/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
-// import { faWhatsapp } from "@fortawesome/free-solid-svg-icons";
 import ParticlesComponent from "./Components/config/particles_config";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import WhatsAppIcon from "../src/Assets/images/whatsapp.svg";
 
 function App() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
@@ -33,7 +32,7 @@ function App() {
     <div>
       <Topbar />
       <Home />
-      <ParticlesComponent id="particles" />
+      <ParticlesComponent id="particles" className="h-screen" />
 
       <About />
       <Skills />
@@ -42,16 +41,13 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-      <div className="h-14 w-14 flex justify-center border border-white items-center fixed bottom-4 left-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
+      <div className="h-16 w-16 flex justify-center border border-white items-center fixed bottom-4 left-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
         <a href="https://wa.link/yp6v57">
-          <FontAwesomeIcon
-            icon={faCommentDots}
-            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-6 w-6 "
+          <img
+            src={WhatsAppIcon}
+            alt=""
+            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-full w-full "
           />
-          {/* <FontAwesomeIcon
-            icon={faWhatsapp}
-            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-6 w-6 "
-          /> */}
         </a>
       </div>
 

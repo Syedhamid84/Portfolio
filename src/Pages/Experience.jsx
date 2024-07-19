@@ -23,7 +23,7 @@ const Experience = () => {
   };
 
   return (
-    <div id="experience" className="bg-[#f7f7f7] w-full pt-4 ">
+    <div id="experience" className="bg-[#f7f7f7] w-full pt-4  ">
       <div className="flex justify-center items-center  gap-2">
         <span className="items-center">
           <FontAwesomeIcon
@@ -35,7 +35,7 @@ const Experience = () => {
       </div>
 
       <div
-        className="w-12 h-[750px] bg-transparent relative m-0 md:mx-auto top-2"
+        className="w-12 h-[680px] bg-transparent relative m-0 md:mx-auto  "
         ref={ref}
       >
         <div className="w-2 h-full absolute bg-black mx-auto top-0 left-0 right-0"></div>
@@ -80,7 +80,7 @@ const Experience = () => {
 
       {allexperience && (
         <div
-          className="w-12 h-[750px] bg-transparent relative m-0 md:mx-auto top-2"
+          className="w-12 h-[750px] bg-transparent relative m-0 md:mx-auto bottom-4  "
           ref={ref}
         >
           <div className="w-2 h-full absolute bg-black mx-auto top-0 left-0 right-0"></div>
@@ -124,11 +124,13 @@ const Experience = () => {
         </div>
       )}
       {!allexperience ? (
-        <div onClick={() => handleView()}>
-          <ViewButton buttonValue={"View All"} experience={true} />
+        <div className="" onClick={() => handleView()}>
+          <ViewButton buttonValue={"View More"} experience={true} />
         </div>
       ) : (
-        <div></div>
+        <div onClick={() => handleView()}>
+          <ViewButton buttonValue={"View Less"} experience={true} />
+        </div>
       )}
     </div>
   );

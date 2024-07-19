@@ -26,20 +26,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* <Link
-          activeClass="active"
-          to="test1"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <div className="flex justify-center items-center h-9 w-9 bg-yellow-400 rounded-full absolute bottom-4 right-4">
-            <span>
-              <FontAwesomeIcon icon={faAngleUp} className="text-black" />
-            </span>
-          </div>
-        </Link> */}
-
         <div className="flex flex-col gap-2 w-full">
           <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
           {QuickLinksData.map((Item, index) => {

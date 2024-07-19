@@ -28,3 +28,26 @@
   gap: 12px;
 }
 
+
+.input-container {
+  position: relative;
+}
+
+.input-container input:focus {
+  outline-color: #7e19af;
+}
+
+.input-container input:focus + span .icon {
+  color: #7e19af;
+}
+
+.input-container textarea:focus {
+  outline-color: #7e19af;
+}
+
+.input-container textarea:focus + span .icon {
+  color: #7e19af;
+}
+
+
+

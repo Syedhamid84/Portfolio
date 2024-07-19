@@ -11,8 +11,8 @@ const Topbar = () => {
 
   return (
     // fixed and static issues
-    <div name="test1" className="flex-col ">
-      <div className="bg-white py-3 w-full flex items-center justify-end gap-6 px-5 static md:px-16  z-40 ">
+    <div name="test1" className=" ">
+      <div className="bg-white py-3 w-full flex items-center justify-end gap-6 px-5 static md:px-16  z-40 border-b">
         <div className=" flex-1 ml-5 md:ml-10  ">
           <NameLogo />
         </div>
@@ -39,7 +39,7 @@ const Topbar = () => {
           <Hamburger toggled={open} toggle={setOpen} />
         </div>
       </div>
-      <hr />
+      {/* <hr /> */}
       {open && <MobileNavbar />}
     </div>
   );
