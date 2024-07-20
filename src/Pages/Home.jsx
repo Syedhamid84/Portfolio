@@ -9,8 +9,6 @@ import LogoDevIcon from "@mui/icons-material/LogoDev";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import hero from "../images/hero.png";
-// import ParticlesComponent from "../Components/config/particles_config";
-// import Design from "../Components/design";
 
 const Home = () => {
   const [hover, setHover] = useState(false);
@@ -18,18 +16,15 @@ const Home = () => {
     <section
       id="home"
       //using mt-20 to expand particles js
-      className="flex flex-col md:flex-row justify-evenly items-center px-5 mt-20 py-8 md:py-16 gap-12 "
+      className="flex flex-col md:flex-row justify-evenly items-center px-5 py-8 md:py-28 gap-12 mt-[60px]"
     >
       {/* <ParticlesComponent id="particles" /> */}
-      <div className=" flex  items-start justify-center flex-col gap-4">
+      <div className=" flex  items-start justify-center flex-col gap-4 ">
         <h2 className="text-3xl md:text-5xl font-bold text-[#002057] font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
           <span className="text-[#FF7B00] ">Ali</span>
         </h2>
         <div>
-          {/* <h1 className="text-2xl">I'm into Frontend Web Developement</h1> */}
-          {/* <TypeWriter text="Frontend Web Developement| " /> */}
-
           <TypeWriter
             texts={[
               "Frontend Web Development|",
@@ -39,8 +34,6 @@ const Home = () => {
             ]}
             speed={80}
           />
-
-          {/* <TypeWriter text="  Backend Web Developement|" /> */}
         </div>
 
         <Link
@@ -65,7 +58,6 @@ const Home = () => {
             return (
               <div
                 key={index}
-                // className="h-12 w-12 ´${hover:item.bghover} ´ flex items-center  justify-center rounded-full bg-black"
                 className={`h-12 w-12 ${
                   hover ? item.bghover : ""
                 } flex items-center justify-center rounded-full bg-black`}
@@ -80,8 +72,6 @@ const Home = () => {
       </div>
 
       <img src={hero} alt="" className=" h-80 w-80 rounded-full" />
-
-      {/* <div id="particles-js" className="bg-red-500"></div> */}
     </section>
   );
 };
