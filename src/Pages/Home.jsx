@@ -20,9 +20,9 @@ const Home = () => {
     >
       {/* <ParticlesComponent id="particles" /> */}
       <div className=" flex  items-start justify-center flex-col gap-4 ">
-        <h2 className="text-3xl md:text-5xl font-bold text-[#002057] font-poppins ">
+        <h2 className="text-3xl md:text-5xl font-bold text-mudblue font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
-          <span className="text-[#FF7B00] ">Ali</span>
+          <span className="text-orange ">Ali</span>
         </h2>
         <div>
           <TypeWriter
@@ -43,9 +43,9 @@ const Home = () => {
           smooth={true}
           offset={-70}
           duration={500}
-          className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer "
+          className="flex items-center gap-2 text-base cursor-pointer "
         >
-          <button className="rounded-3xl text-lg bg-[#2506ad] text-[#FFFFFF] px-6 py-2 flex gap-1 shadow-xl hover:shadow-2xl transition-shadow duration-300 ">
+          <button className="rounded-3xl text-lg bg-royalblue text-white px-6 py-2 flex gap-1 shadow-xl hover:shadow-2xl transition-shadow duration-300 ">
             About Me
             <span>
               <FontAwesomeIcon icon={faCircleArrowDown} />
@@ -59,7 +59,7 @@ const Home = () => {
               <div
                 key={index}
                 className={`h-12 w-12 ${
-                  hover ? item.bghover : ""
+                  hover ? "" : ""
                 } flex items-center justify-center rounded-full bg-black`}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}

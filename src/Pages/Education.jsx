@@ -17,7 +17,7 @@ const Education = () => {
     },
   };
   return (
-    <div id="education" className="w-full bg-[#e5ecfb] py-8 ">
+    <div id="education" className="w-full bg-skywhite py-8 ">
       <div className="flex flex-col gap-6 items-center">
         <div className="flex items-center gap-2">
           <span>
@@ -25,13 +25,13 @@ const Education = () => {
           </span>
           <h1 className="">
             <span className="text-3xl md:text-4xl font-bold">My </span>
-            <span className="text-3xl md:text-4xl font-bold text-[#7403a7]">
+            <span className="text-3xl md:text-4xl font-bold text-purple">
               Education
             </span>
           </h1>
         </div>
 
-        <p className="text-lg  text-[#000000] text-center px-2 ">
+        <p className="text-lg  text-black text-center px-2 ">
           Education Is Not The Learning Of Facts, But The Training Of The Mind
           To Think.
         </p>
@@ -49,7 +49,7 @@ const Education = () => {
                 <div
                   // ref={ref}
                   key={index}
-                  className="flex flex-col md:flex-row gap-0 md:gap-4 w-full bg-[#fcfcfc] rounded-md shadow-xl hover:shadow-2xl transition-shadow duration-300 "
+                  className="flex flex-col md:flex-row gap-0 md:gap-4 w-full bg-brightwhite rounded-md shadow-xl hover:shadow-2xl transition-shadow duration-300 "
                 >
                   {" "}
                   <div className="w-full md:w-56">
@@ -60,13 +60,13 @@ const Education = () => {
                     />
                   </div>
                   <div className="flex flex-col justify-center gap-2 w-full mt-2 p-4">
-                    <span className="text-2xl font-semibold text-[#012a70]">
+                    <span className="text-2xl font-semibold text-navyblue">
                       {item.degree}
                     </span>
-                    <span className="text-base text-[#070707]">
+                    <span className="text-base text-lightblack">
                       {item.school}
                     </span>
-                    <span className="text-lg font-semibold   text-[#226d01] ">
+                    <span className="text-lg font-semibold text-green">
                       {item.date}
                     </span>
                   </div>

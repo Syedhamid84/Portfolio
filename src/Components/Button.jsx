@@ -6,13 +6,13 @@ const ViewButton = ({ buttonValue, work, experience }) => {
   return (
     <div className="flex justify-center ">
       <button
-        className={`rounded-md text-[#FFFFFF]  px-8 py-2.5 flex gap-1 mb-4
+        className={`rounded-md text-white  px-8 py-2.5 flex gap-1 mb-4
  ${
    work
-     ? "mt-4 border-2 bg-[#01042d] border-white hover:bg-white hover:text-black button-gap"
+     ? "mt-4 border-2 bg-darkblue border-white hover:bg-white hover:text-black button-gap"
      : ""
  } 
- ${experience ? "bg-[#2506ad] mt-2 button-gap" : ""}
+ ${experience ? "bg-royalblue mt-2 button-gap" : ""}
  
 
  

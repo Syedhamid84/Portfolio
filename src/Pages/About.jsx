@@ -39,7 +39,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="bg-[#efefef] w-full py-12">
+    <section id="about" className="bg-mudwhite w-full py-12">
       <div>
         <div className="flex justify-center gap-2 ">
           <span>
@@ -47,7 +47,7 @@ const About = () => {
           </span>
           <h1>
             <span className="text-3xl md:text-4xl font-bold">About</span>
-            <span className="text-3xl md:text-4xl font-bold text-[#7403a7]">
+            <span className="text-3xl md:text-4xl font-bold text-purple">
               {" "}
               Me
             </span>
@@ -100,7 +100,7 @@ const About = () => {
                   variants={itemVariants}
                 >
                   <span className="flex gap-1 text-base font-poppins">
-                    <p className="text-[#1522ff]">Email :</p>{" "}
+                    <p className="text-lightblue">Email :</p>{" "}
                     <a href="https://mail.google.com/mail/u/0/#compose">
                       {" "}
                       {item.email}
@@ -115,15 +115,15 @@ const About = () => {
                   variants={itemVariants}
                 >
                   <span className="flex gap-1 text-base font-poppins">
-                    <p className="text-[#1522ff]">Place :</p>{" "}
+                    <p className="text-lightblue">Place :</p>{" "}
                     <p>{item.place}</p>
                   </span>
                 </motion.div>
 
                 <a href={resume} download="Resume">
                   <button
-                    className="flex justify-center items-center font-sans font-medium rounded-md bg-[#2506ad] 
-                  text-[#FFFFFF] text-lg w-32 py-2 gap-2 mt-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 button-gap"
+                    className="flex justify-center items-center font-sans font-medium rounded-md bg-royalblue
+                  text-white text-lg w-32 py-2 gap-2 mt-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 button-gap"
                   >
                     {item.button}
                     <FontAwesomeIcon icon={item.icon} className="w-2 mt-1" />

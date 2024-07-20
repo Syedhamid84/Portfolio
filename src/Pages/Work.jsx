@@ -19,19 +19,19 @@ const Work = () => {
   );
 
   return (
-    <section id="work" className="bg-[#01042d] w-full">
+    <section id="work" className="bg-darkblue w-full">
       <div className="flex justify-center items-center gap-2 py-4">
         <span className="items-center">
           <FontAwesomeIcon
             icon={faLaptopCode}
-            className="h-14 w-14 text-[#FFFFFF]"
+            className="h-14 w-14 text-white"
           />
         </span>
         <h1>
-          <span className="text-3xl md:text-4xl font-bold text-[#FFFFFF]">
+          <span className="text-3xl md:text-4xl font-bold text-white">
             Projects
           </span>
-          <span className="text-3xl md:text-4xl font-bold text-[#ffe603]">
+          <span className="text-3xl md:text-4xl font-bold text-yellow">
             {" "}
             Made
           </span>
@@ -44,8 +44,8 @@ const Work = () => {
           onClick={() => setSelectedCategory("webdevelopment")}
           className={` text-sm md:text-2xl p-2 ${
             selectedCategory === "webdevelopment"
-              ? "text-white border-b-2 border-[#ffe603]"
-              : "text-[#8C8C8C]"
+              ? "text-white border-b-2 border-yellow"
+              : "text-grey"
           }`}
         >
           Web Development
@@ -54,8 +54,8 @@ const Work = () => {
           onClick={() => setSelectedCategory("mobiledevelopment")}
           className={` text-lg md:text-2xl p-2 ${
             selectedCategory === "mobiledevelopment"
-              ? "text-white border-b-2 border-[#ffe603]"
-              : "text-[#8C8C8C]"
+              ? "text-white border-b-2 border-yellow"
+              : "text-grey"
           }`}
         >
           Mobile Development
@@ -64,8 +64,8 @@ const Work = () => {
           onClick={() => setSelectedCategory("backenddevelopment")}
           className={` text-lg md:text-2xl p-2 ${
             selectedCategory === "backenddevelopment"
-              ? "text-white border-b-2 border-[#ffe603]"
-              : "text-[#8C8C8C]"
+              ? "text-white border-b-2 border-yellow"
+              : "text-grey"
           }`}
         >
           Backend Development
@@ -83,12 +83,12 @@ const Work = () => {
                 className="object-cover object-center w-full h-full rounded-md"
               />
               <div className="absolute bottom-0 w-full">
-                <div className="bg-yellow-300 rounded-b-md px-2 py-4 text-xl font-bold">
+                <div className="bg-yellow rounded-b-md px-2 py-4 text-xl font-bold">
                   {Item.projectname}
                 </div>
               </div>
               <div className="flex flex-col gap-3 absolute opacity-0 hover:opacity-100 bg-white bottom-0 right-0">
-                <h3 className="text-xl bg-yellow-300 px-2 py-4 font-bold">
+                <h3 className="text-xl bg-yellow px-2 py-4 font-bold">
                   {Item.projectname}
                 </h3>
                 <h1 className="px-5 text-base">{Item.projectdescription}</h1>

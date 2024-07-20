@@ -13,21 +13,21 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-8 bg-[#05011f] px-4 md:px-20 relative">
+    <div className="flex flex-col gap-8 bg-darknavyblue px-4 md:px-20 relative">
       <div className="flex flex-col md:flex-row gap-8 pt-6">
         <div className="flex flex-col gap-2 w-full ">
-          <h1 className="text-[#FFFFFF]  text-2xl">hamid's Portfolio</h1>
-          <p className="text-[#FFFFFF]  text-base">
+          <h1 className="text-white  text-2xl">hamid's Portfolio</h1>
+          <p className="text-white text-base">
             Thank you for visiting my personal portfolio website. Connect with
             me over socials.
           </p>
-          <p className="text-[#FFFFFF] text-base">
+          <p className="text-white text-base">
             Keep Rising 🚀. Connect with me over live chat!
           </p>
         </div>
 
         <div className="flex flex-col gap-2 w-full">
-          <h1 className="text-[#FFFFFF] text-2xl ">Quick links</h1>
+          <h1 className="text-white text-2xl ">Quick links</h1>
           {QuickLinksData.map((Item, index) => {
             return (
               <Link
@@ -38,7 +38,7 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="flex items-center gap-2 text-[#FFFFFF] text-base cursor-pointer  hover:text-[#ffae02] "
+                className="flex items-center gap-2 text-white text-base cursor-pointer  hover:text-mudorange "
               >
                 <span className="">
                   {" "}
@@ -51,16 +51,16 @@ const Footer = () => {
         </div>
         <div className="flex items-start w-full">
           <div className="flex flex-col gap-2 ">
-            <h1 className="text-[#FFFFFF] text-2xl">Contact Info</h1>
+            <h1 className="text-white text-2xl">Contact Info</h1>
             {ContactinfoData.map((Item, index) => {
               return (
                 <div
                   key={index}
-                  className="flex items-center gap-2 text-[#FFFFFF] text-base"
+                  className="flex items-center gap-2 text-white text-base"
                 >
                   <FontAwesomeIcon
                     icon={Item.icon}
-                    className="text-[#ffae02]"
+                    className="text-mudorange"
                   />
                   <span>{Item.text}</span>
                 </div>
@@ -71,10 +71,10 @@ const Footer = () => {
                 return (
                   <div
                     key={index}
-                    className="h-12 w-12 flex items-center  justify-center rounded-full  bg-[#e6e6e6] group hover:bg-[#05011f] 
-                  border border-[#FFFFFF] "
+                    className="h-12 w-12 flex items-center  justify-center rounded-full  bg-lightwhite group hover:bg-darknavyblue
+                  border border-white "
                   >
-                    <item.icon className="text-[#02094b] group-hover:text-[#ffae02] " />
+                    <item.icon className="text-iconcolor group-hover:text-mudorange" />
                   </div>
                 );
               })}
@@ -84,11 +84,11 @@ const Footer = () => {
       </div>
       <hr className="h-1 w-full" />
 
-      <div className=" bg-[#05011f]  flex justify-center mb-4">
-        <div className="text-[#e6e6e6] bg-[#05011f] ">
+      <div className=" bg-darknavyblue flex justify-center mb-4">
+        <div className="text-lightwhite bg-darknavyblue">
           Designed With{" "}
           <span>
-            <FontAwesomeIcon icon={faHeart} className="text-[#ea0607]" />
+            <FontAwesomeIcon icon={faHeart} className="text-heartcolor" />
           </span>{" "}
           By Syed Hamid Ali
         </div>

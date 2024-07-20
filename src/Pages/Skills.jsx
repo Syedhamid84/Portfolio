@@ -16,20 +16,20 @@ const Skills = () => {
     },
   };
   return (
-    <section id="skills" className="w-full bg-[#5304b5]">
+    <section id="skills" className="w-full bg-lightpurple">
       <div className="flex justify-center items-center gap-2 p-2">
         <div className=" flex justify-center items-center gap-2 my-2">
           <span className="items-center ">
             <FontAwesomeIcon
               icon={faLaptopCode}
-              className="h-14 w-14 text-[#FFFFFF]"
+              className="h-14 w-14 text-white"
             />
           </span>
           <h1 className="">
-            <span className="text-3xl md:text-4xl font-bold text-[#FFFFFF]">
+            <span className="text-3xl md:text-4xl font-bold text-white">
               Skills &
             </span>
-            <span className="text-3xl md:text-4xl font-bold text-[#ffe603]">
+            <span className="text-3xl md:text-4xl font-bold text-yellow">
               {" "}
               Abilities
             </span>
@@ -39,7 +39,7 @@ const Skills = () => {
 
       <div className="flex justify-center items-center ">
         <div
-          className="flex justify-center pb-4 gap-3 bg-[#330572] flex-wrap rounded-lg mx-5 md:mx-24 lg:mx-48 pt-4 mb-4"
+          className="flex justify-center pb-4 gap-3 bg-bluegradient flex-wrap rounded-lg mx-5 md:mx-24 lg:mx-48 pt-4 mb-4"
           ref={ref}
         >
           {SkillsData.map((item, index) => {
@@ -50,14 +50,14 @@ const Skills = () => {
                 variants={animationVariants}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
-                className="flex flex-col justify-center items-center h-32 md:h-32 w-32 md:w-40 bg-[#05011f] rounded-lg"
+                className="flex flex-col justify-center items-center h-32 md:h-32 w-32 md:w-40 bg-darknavyblue rounded-lg"
               >
                 <img
                   src={item.image}
                   alt=""
-                  className="h-10 md:h-12 w-10 md:w-12 bg-[#05011f] "
+                  className="h-10 md:h-12 w-10 md:w-12 bg-darknavyblue"
                 />
-                <span className="text-lg md:text-2xl text-[#FFFFFF] mt-2">
+                <span className="text-lg md:text-2xl text-white mt-2">
                   {item.name}
                 </span>
               </motion.div>

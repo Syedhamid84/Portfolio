@@ -41,12 +41,12 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-      <div className="h-16 w-16 flex justify-center border border-white items-center fixed bottom-4 left-4 rounded-full bg-[#05011f] [#ffae02]  group hover:border-[#ffae02] animate-bounce	">
+      <div className="h-16 w-16 flex justify-center border border-white items-center fixed bottom-4 left-4 rounded-full bg-darknavyblue  group hover:border-mudorange animate-bounce	">
         <a href="https://wa.link/yp6v57">
           <img
             src={WhatsAppIcon}
             alt=""
-            className="text-lg text-[#FFFFFF] group-hover:text-[#ffae02] h-full w-full "
+            className="text-lg text-white group-hover:text-mudorange h-full w-full "
           />
         </a>
       </div>

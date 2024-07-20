@@ -23,15 +23,15 @@ const Experience = () => {
   };
 
   return (
-    <div id="experience" className="bg-[#f7f7f7] w-full pt-4  ">
+    <div id="experience" className="bg-offwhite w-full pt-4">
       <div className="flex justify-center items-center  gap-2">
         <span className="items-center">
           <FontAwesomeIcon
             icon={faBriefcase}
-            className="h-10 w-10 text-[#202020]"
+            className="h-10 w-10 text-darkblack"
           />
         </span>
-        <h1 className="text-4xl font-bold text-[#202020]">Experience</h1>
+        <h1 className="text-4xl font-bold text-darkblack">Experience</h1>
       </div>
 
       <div
@@ -48,12 +48,12 @@ const Experience = () => {
               variants={animationVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className={`h-8 w-8 bg-white border-4 border-[#ff9f55] rounded-full absolute left-0 right-0 mx-auto ${Data.div1}`}
+              className={`h-8 w-8 bg-white border-4 border-lightorange rounded-full absolute left-0 right-0 mx-auto ${Data.div1}`}
             >
               <div className="h-full w-full relative flex justify-center items-center">
                 <FontAwesomeIcon icon={faBriefcase} className="w-7 " />
                 <div
-                  className={`w-[280px] md:w-[300px]  absolute bg-[#f68c09] -top-[14px] md:mx-auto rounded-md 
+                  className={`w-[280px] md:w-[300px]  absolute bg-darkorange -top-[14px] md:mx-auto rounded-md 
                     ${
                       index % 2 === 0
                         ? "left-16"
@@ -63,7 +63,7 @@ const Experience = () => {
                 >
                   <div className="relative w-full bg-red400">
                     <div
-                      className={`absolute bg-[#f68c09] h-6 w-6 top-4 rotate-45 ${Data.div5}`}
+                      className={`absolute bg-darkorange h-6 w-6 top-4 rotate-45 ${Data.div5}`}
                     ></div>
                     <div className="flex flex-col px-8 py-2">
                       <h1 className="font-bold">{Data.heading1}</h1>
@@ -93,12 +93,12 @@ const Experience = () => {
                 variants={animationVariants}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
-                className={`h-8 w-8 bg-white border-4 border-[#ff9f55] rounded-full absolute left-0 right-0 mx-auto ${Data.div1}`}
+                className={`h-8 w-8 bg-white border-4 border-lightorange rounded-full absolute left-0 right-0 mx-auto ${Data.div1}`}
               >
                 <div className="h-full w-full relative flex justify-center items-center">
                   <FontAwesomeIcon icon={faBriefcase} className="w-7 " />
                   <div
-                    className={`w-[280px] md:w-[300px]  absolute bg-[#f68c09] -top-[14px] md:mx-auto rounded-md 
+                    className={`w-[280px] md:w-[300px]  absolute bg-darkorange -top-[14px] md:mx-auto rounded-md 
                     ${
                       index % 2 === 0
                         ? "left-16"
@@ -108,7 +108,7 @@ const Experience = () => {
                   >
                     <div className="relative w-full bg-red400">
                       <div
-                        className={`absolute bg-[#f68c09] h-6 w-6 top-4 rotate-45 ${Data.div5}`}
+                        className={`absolute bg-darkorange h-6 w-6 top-4 rotate-45 ${Data.div5}`}
                       ></div>
                       <div className="flex flex-col px-8 py-2">
                         <h1 className="font-bold">{Data.heading1}</h1>

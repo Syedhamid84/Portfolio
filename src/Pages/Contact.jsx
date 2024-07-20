@@ -38,19 +38,19 @@ const Contact = () => {
     formik;
 
   return (
-    <div id="contact" className="w-full bg-[#e5ecfb] py-8">
+    <div id="contact" className="w-full bg-skywhite py-8">
       <div className="flex items-center justify-center gap-2 pt-2">
         <span>
           <FontAwesomeIcon icon={faHeadset} className="h-9 w-9" />
         </span>
         <h1>
           <span className="text-4xl font-bold">Get In </span>
-          <span className="text-4xl font-bold text-[#7403a7]">Touch</span>
+          <span className="text-4xl font-bold text-purple">Touch</span>
         </h1>
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="flex justify-center gap-10 w-[330px] md:w-[996px] bg-[#FFFFFF] mt-12 px-4 py-6 rounded-2xl">
+        <div className="flex justify-center gap-10 w-[330px] md:w-[996px] bg-white mt-12 px-4 py-6 rounded-2xl">
           <img src={FormImage} alt="" className="hidden md:block" />
           <form
             ref={formRef}
@@ -59,7 +59,7 @@ const Contact = () => {
           >
             <div className="input-container">
               <input
-                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black pl-12"
+                className="bg-skywhite h-12 w-full placeholder-black rounded-md border border-black pl-12"
                 type="text"
                 placeholder="Name"
                 id="username"
@@ -72,11 +72,11 @@ const Contact = () => {
               <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                 <FontAwesomeIcon
                   icon={faUser}
-                  className="text-lg text-[#333333] icon"
+                  className="text-lg text-greyishblack icon"
                 />
               </span>
               {errors.username && touched.username && (
-                <span className="text-red-500 text-sm p-1">
+                <span className="text-heartcolor text-sm p-1">
                   {errors.username}
                 </span>
               )}
@@ -84,7 +84,7 @@ const Contact = () => {
 
             <div className="input-container">
               <input
-                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black group pl-12"
+                className="bg-skywhite h-12 w-full placeholder-black rounded-md border border-black group pl-12"
                 type="email"
                 placeholder="Email"
                 id="useremail"
@@ -97,11 +97,11 @@ const Contact = () => {
               <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-lg text-[#333333] icon"
+                  className="text-lg text-greyishblack icon"
                 />
               </span>
               {errors.useremail && touched.useremail && (
-                <span className="text-red-500 text-sm p-1">
+                <span className="text-heartcolor text-sm p-1">
                   {errors.useremail}
                 </span>
               )}
@@ -109,7 +109,7 @@ const Contact = () => {
 
             <div className="input-container">
               <input
-                className="bg-[#e5ecfb] h-12 w-full placeholder-black rounded-md border border-black pl-12"
+                className="bg-skywhite h-12 w-full placeholder-black rounded-md border border-black pl-12"
                 type="tel"
                 placeholder="Phone"
                 id="userphone"
@@ -122,11 +122,11 @@ const Contact = () => {
               <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                 <FontAwesomeIcon
                   icon={faPhone}
-                  className="text-lg text-[#333333] icon"
+                  className="text-lg text-greyishblack icon"
                 />
               </span>
               {errors.userphone && touched.userphone && (
-                <span className="text-red-500 text-sm p-1">
+                <span className="text-heartcolor text-sm p-1">
                   {errors.userphone}
                 </span>
               )}
@@ -134,7 +134,7 @@ const Contact = () => {
 
             <div className="input-container">
               <textarea
-                className="bg-[#e5ecfb] h-36 w-full placeholder-black rounded-md pl-12 border border-black pt-2 resize-none"
+                className="bg-skywhite h-36 w-full placeholder-black rounded-md pl-12 border border-black pt-2 resize-none"
                 placeholder="Message"
                 id="usermessage"
                 name="usermessage"
@@ -146,11 +146,11 @@ const Contact = () => {
               <span className="flex justify-center items-center absolute top-0 h-12 w-12">
                 <FontAwesomeIcon
                   icon={faCommentDots}
-                  className="text-lg text-[#333333] icon"
+                  className="text-lg text-greyishblack icon"
                 />
               </span>
               {errors.usermessage && touched.usermessage && (
-                <span className="text-red-500 text-sm p-1">
+                <span className="text-heartcolor text-sm p-1">
                   {errors.usermessage}
                 </span>
               )}
@@ -158,7 +158,7 @@ const Contact = () => {
 
             <div className="flex justify-end">
               <button
-                className="flex justify-center items-center gap-2 rounded-md bg-[#2506ad] text-lg text-[#FFFFFF] w-32 h-12 cursor-pointer shadow-outline"
+                className="flex justify-center items-center gap-2 rounded-md bg-royalblue text-lg text-white w-32 h-12 cursor-pointer shadow-outline"
                 type="submit"
               >
                 Submit
