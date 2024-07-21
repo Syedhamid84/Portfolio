@@ -52,7 +52,7 @@ const Work = () => {
         </button>
         <button
           onClick={() => setSelectedCategory("mobiledevelopment")}
-          className={` text-lg md:text-2xl p-2 ${
+          className={` text-sm md:text-2xl p-2 ${
             selectedCategory === "mobiledevelopment"
               ? "text-white border-b-2 border-yellow"
               : "text-grey"
@@ -62,7 +62,7 @@ const Work = () => {
         </button>
         <button
           onClick={() => setSelectedCategory("backenddevelopment")}
-          className={` text-lg md:text-2xl p-2 ${
+          className={` text-sm md:text-2xl p-2 ${
             selectedCategory === "backenddevelopment"
               ? "text-white border-b-2 border-yellow"
               : "text-grey"

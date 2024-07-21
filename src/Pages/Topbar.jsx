@@ -11,7 +11,7 @@ const Topbar = () => {
 
   return (
     // fixed and static issues
-    <div name="test2" className=" ">
+    <div id="test2" className=" ">
       <div className="bg-white py-3 w-full flex items-center justify-end gap-6 px-5 md:px-16 fixed top-0 left-0 right-0 z-50 border-b ">
         <div className=" flex-1 ml-5 md:ml-10  ">
           <NameLogo />

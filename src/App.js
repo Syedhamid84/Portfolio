@@ -9,30 +9,30 @@ import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Footer from "./Pages/Footer";
 import Experience from "./Pages/Experience";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ParticlesComponent from "./Components/config/particles_config";
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+// import { Link } from "react-scroll";
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 import WhatsAppIcon from "../src/Assets/images/whatsapp.svg";
 
 function App() {
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
+  // const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
 
-  const itemVariants = {
-    hidden: { y: "-100vh", opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 1, ease: "easeInOut" },
-    },
-  };
+  // const itemVariants = {
+  //   hidden: { y: "-100vh", opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1,
+  //     transition: { duration: 1, ease: "easeInOut" },
+  //   },
+  // };
   return (
     <div>
       <Topbar />
       <Home />
-      <ParticlesComponent id="particles" className="" />
+      <ParticlesComponent id="particles" className="h-screen" />
 
       <About />
       <Skills />
@@ -51,7 +51,7 @@ function App() {
         </a>
       </div>
 
-      <div ref={ref} className="bg-red-500">
+      {/* <div ref={ref} className="bg-red-500">
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -59,7 +59,7 @@ function App() {
         >
           <Link
             activeClass="active"
-            to="test2"
+            to="home"
             spy={true}
             smooth={true}
             duration={500}
@@ -71,7 +71,7 @@ function App() {
             </div>
           </Link>
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 }

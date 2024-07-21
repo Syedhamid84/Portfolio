@@ -72,16 +72,16 @@ const Contact = () => {
             <img src={FormImage} alt="" className="hidden md:block" />
           </motion.div>
 
-          <motion.div
-            ref={ref}
-            variants={animationVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+          <form
+            ref={formRef}
+            className="flex flex-col gap-4 w-96"
+            onSubmit={handleSubmit}
           >
-            <form
-              ref={formRef}
-              className="flex flex-col gap-4 w-96"
-              onSubmit={handleSubmit}
+            <motion.div
+              ref={ref}
+              variants={animationVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
             >
               <div className="input-container">
                 <input
@@ -107,7 +107,14 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+            </motion.div>
 
+            <motion.div
+              ref={ref}
+              variants={animationVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
               <div className="input-container">
                 <input
                   className="bg-skywhite h-12 w-full placeholder-black rounded-md border border-black group pl-12"
@@ -132,7 +139,14 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+            </motion.div>
 
+            <motion.div
+              ref={ref}
+              variants={animationVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
               <div className="input-container">
                 <input
                   className="bg-skywhite h-12 w-full placeholder-black rounded-md border border-black pl-12"
@@ -157,7 +171,14 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+            </motion.div>
 
+            <motion.div
+              ref={ref}
+              variants={animationVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
               <div className="input-container">
                 <textarea
                   className="bg-skywhite h-36 w-full placeholder-black rounded-md pl-12 border border-black pt-2 resize-none"
@@ -181,7 +202,14 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+            </motion.div>
 
+            <motion.div
+              ref={ref}
+              variants={animationVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
               <div className="flex justify-end">
                 <button
                   className="flex justify-center items-center gap-2 rounded-md bg-royalblue text-lg text-white w-32 h-12 cursor-pointer shadow-outline"
@@ -193,8 +221,8 @@ const Contact = () => {
                   </span>
                 </button>
               </div>
-            </form>
-          </motion.div>
+            </motion.div>
+          </form>
         </div>
       </div>
     </div>
