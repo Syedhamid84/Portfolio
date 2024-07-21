@@ -32,7 +32,7 @@ function App() {
     <div>
       <Topbar />
       <Home />
-      <ParticlesComponent id="particles" className="h-screen" />
+      <ParticlesComponent id="particles" className="" />
 
       <About />
       <Skills />
@@ -51,7 +51,7 @@ function App() {
         </a>
       </div>
 
-      <div ref={ref}>
+      <div ref={ref} className="bg-red-500">
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -59,12 +59,12 @@ function App() {
         >
           <Link
             activeClass="active"
-            to="test1"
+            to="test2"
             spy={true}
             smooth={true}
             duration={500}
           >
-            <div className="flex justify-center items-center h-9 w-9 bg-yellow-400 rounded-full fixed bottom-8 right-8">
+            <div className="flex justify-center items-center h-9 w-9 bg-yellow rounded-full fixed bottom-8 right-8">
               <span>
                 <FontAwesomeIcon icon={faAngleUp} className="text-black" />
               </span>
