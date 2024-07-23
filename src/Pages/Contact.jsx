@@ -62,7 +62,7 @@ const Contact = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="flex justify-center gap-10 w-[330px] md:w-[996px] bg-white mt-12 px-4 py-6 rounded-2xl">
+        <div className="flex justify-center gap-0 md:gap-10 w-[330px] md:w-[996px] bg-white mt-12 px-4 py-6 rounded-2xl">
           <motion.div
             ref={ref}
             variants={animationVariants}

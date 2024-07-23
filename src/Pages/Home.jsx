@@ -16,16 +16,17 @@ const Home = () => {
     <section
       id="home"
       //using mt-20 to expand particles js
-      className="flex flex-col md:flex-row justify-evenly items-center px-5 py-8 md:py-28 gap-12 mt-[60px]"
+      className="flex flex-col md:flex-row justify-between items-center px-4 md:px-24 py-8 md:py-28 gap-12 mt-[60px]"
     >
       {/* <ParticlesComponent id="particles" /> */}
-      <div className=" flex  items-start justify-center flex-col gap-4 ">
+      <div className=" flex  items-start justify-center flex-col gap-4 w-full  ml-2 md:ml-0">
         <h2 className="text-3xl md:text-5xl font-bold text-mudblue font-poppins ">
           Hi There, <br /> I'm Syed Hamid{" "}
           <span className="text-orange ">Ali</span>
         </h2>
-        <div>
+        <div className="">
           <TypeWriter
+            className="md:"
             texts={[
               "Frontend Web Development|",
               "Backend Web Development|",
@@ -35,7 +36,6 @@ const Home = () => {
             speed={80}
           />
         </div>
-
         <Link
           activeClass="active"
           to="about"
